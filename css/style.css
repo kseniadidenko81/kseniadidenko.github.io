@@ -1323,6 +1323,14 @@ body::-webkit-scrollbar-thumb {
 .timeline ul li.show:after {
     background: #fff;
 }
+.link p {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    font-size: 18px;
+    color: #ded8d8;
+    border-bottom: 1px solid #fff;
+}
 /*Media*/
 
 @media (min-width: 768px) {
