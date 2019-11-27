@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="meta description">
+    <title>OnlineShop</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://colorlib.com/preview/theme/cozastore/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+
+</head>
+
+<body class="">
+
+    <div id="wrapper"></div>
+
+    <header id="nav" class="header-area">
+        <div class="page-header">
+            <div class="header-panel">
+                <div class="container">
+                    <div class="row">
+                        <div class="size-50">
+                            <div class="welcome-message">
+                                <p>Welcome to our online store</p>
+                            </div>
+                        </div>
+                        <div class="size-50 text-right">
+                            <div class="header-wrap-settings">
+                                <ul class="header-settings">
+                                    <li class="curreny-wrap">
+                                        $ Dollar (US)
+                                        <i class="fa fa-angle-down"></i>
+                                        <ul class="dropdown-list curreny-list">
+                                            <li><a href="#">$ usd</a></li>
+                                            <li><a href="#"> € EURO</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="language">
+                                        <img src="img/icon/en.png" alt="flag"> English
+                                        <i class="fa fa-angle-down"></i>
+                                        <ul class="dropdown-list">
+                                            <li>
+                                                <a href="#"><img src="img/icon/en.png" alt="flag"> english</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="img/icon/fr.png" alt="flag"> french</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-aside section">
+                <div class="container">
+                    <div class="row">
+                        <div class="size-25">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/logo/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="size-50">
+                            <div class="navbar-nav-wrap">
+                                <nav class="main-nav desktop-nav">
+                                    <ul>
+                                        <li><a class="active" href="./"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                        </li>
+                                        <li><a href="shop.html">shop <i class="fa fa-angle-down"></i></a>
+                                            <ul class="dropdown">
+                                                <li><a href="cart.html">cart</a></li>
+                                                <li><a href="checkout.html">checkout</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="blog.html">Blog</a>
+                                        </li>
+                                        <li><a href="contact-us.html">Contact us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="size-25">
+                            <div class="nav-configure-wrapper">
+                                <div class="nav-configure-area">
+                                    <ul class="nav">
+                                        <li>
+                                            <a href="#" class="off-btn">
+                                                <i class="ion-ios-search-strong"></i>
+                                            </a>
+                                        </li>
+                                        <li class="user-hover">
+                                            <a href="#">
+                                                <i class="ion-ios-gear-outline"></i>
+                                            </a>
+                                            <ul class="dropdown-list">
+                                                <li><a href="login-register.html">login-register</a></li>
+                                                <li><a href="my-account.html">my account</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="minicart-btn">
+                                                <i class="ion-bag"></i>
+                                                <div class="notification">2</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-header desktop-block mobile-block sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="size-100">
+                        <div class="mobile-main-header">
+                            <div class="mobile-logo">
+                                <a href="index.html">
+                                    <img src="img/logo/logo.png" alt="Brand Logo">
+                                </a>
+                            </div>
+                            <div class="mobile-menu-toggler">
+                                <div class="mini-cart-wrap">
+                                    <a href="cart.html">
+                                        <i class="ion-bag"></i>
+                                    </a>
+                                </div>
+                                <div class="mobile-menu-btn">
+                                    <div class="off-btn">
+                                        <i class="ion-navicon"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="aside-wrapper">
+        <div class="aside-overlay"></div>
+        <div class="aside-inner-content">
+            <div class="btn-close-aside">
+                <i class="ion-android-close"></i>
+            </div>
+            <div class="aside-inner">
+                <div class="search-box-aside">
+                    <form>
+                        <input type="text" placeholder="Search Here...">
+                        <button class="search-btn"><i class="ion-ios-search-strong"></i></button>
+                    </form>
+                </div>
+                <div class="mobile-navigation">
+                    <nav>
+                        <ul class="mobile-menu">
+                            <li class="menu-item-has-children"><a class="active" href="index.html">Home</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <span class="menu-expand"><i></i></span>
+                                <a href="shop.html">shop</a>
+                                <ul class="dropdown">
+                                    <li><a href="cart.html">cart</a></li>
+                                    <li><a href="checkout.html">checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children"><a href="blog.html">Blog</a>
+                            </li>
+                            <li><a href="contact-us.html">Contact us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="mobile-settings">
+                    <ul class="nav">
+                        <li>
+                            <div class="dropdown mobile-top-dropdown">
+                                <a href="#" class="dropdown-toggle dropdown-toggle-currency" id="currency" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    Currency
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-currency" aria-labelledby="currency">
+                                    <a class="dropdown-item" href="#">$ USD</a>
+                                    <a class="dropdown-item" href="#">$ EURO</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown mobile-top-dropdown">
+                                <a href="#" class="dropdown-toggle dropdown-toggle-account" id="myaccount" data-toggle="dropdown"
+                                   aria-haspopup="true" aria-expanded="false">
+                                    My Account
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-account" aria-labelledby="myaccount">
+                                    <a class="dropdown-item" href="my-account.html">my account</a>
+                                    <a class="dropdown-item" href="login-register.html">login-register</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget-area">
+                    <div class="aside-contact-widget">
+                        <ul>
+                            <li><i class="fa fa-mobile"></i>
+                                <a href="#">0123456789</a>
+                            </li>
+                            <li><i class="fa fa-envelope-o"></i>
+                                <a href="#">info@yourdomain.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="aside-social-widget">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <section class="breadcrumb-area" data-bg="img/banner/breadcrumb-banner.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="size-100">
+                        <div class="breadcrumb-wrap">
+                            <nav aria-label="breadcrumb">
+                                <h1 class="breadcrumb-title">Checkout</h1>
+                                <ul class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="checkout-page-wrapper section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="size-100">
+                        <div  class="checkoutaccordion" id="checkOutAccordion">
+                            <div class="card">
+                                <input type="checkbox" id="item_1">
+                                <label for="item_1">
+                                    <h5>Returning Customer? <span aria-expanded="false" class="collapsed">Click
+                                            Here To Login</span></h5>
+                                </label>
+                                <div id="logInaccordion" class="collapse show" data-parent="#checkOutAccordion" style="">
+                                    <div class="card-body">
+                                        <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing &amp; Shipping section.</p>
+                                        <div class="login-reg-form-wrap">
+                                            <div class="row">
+                                                <div class="size-50">
+                                                    <form action="#" method="post">
+                                                        <div class="row">
+                                                            <div class="size-100">
+                                                                <div class="single-input-item">
+                                                                    <input type="email" placeholder="Enter your Email" required="">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="size-100">
+                                                                <div class="single-input-item">
+                                                                    <input type="password" placeholder="Enter your Password" required="">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-input-item">
+                                                            <div class="login-reg-form-meta">
+                                                                <div class="remember-meta">
+                                                                    <div class="custom-control custom-checkbox">
+                                                                        <input type="checkbox" class="custom-control-input" id="rememberMe" required="">
+                                                                        <label class="custom-control-label" for="rememberMe">Remember
+                                                                            Me</label>
+                                                                    </div>
+                                                                </div>
+                                                                <a href="#" class="forget-pwd">Forget Password?</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="single-input-item">
+                                                            <button class="btn btn-sqr">Login</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <input type="checkbox" id="item_2">
+                                <label for="item_2">
+                                    <h5>Have A Coupon? <span aria-expanded="true">Click
+                                    Here To Enter Your Code</span></h5>
+                                </label>
+                                <div class="collapse show" style="">
+                                    <div class="card-body">
+                                        <div class="cart-update-option">
+                                            <div class="apply-coupon-wrapper">
+                                                <form action="#" method="post" class="">
+                                                    <input type="text" placeholder="Enter Your Coupon Code" required="">
+                                                    <button class="btn btn-sqr">Apply Coupon</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="size-50">
+                        <div class="checkout-billing-details-wrap">
+                            <h4 class="checkout-title">Billing Details</h4>
+                            <div class="billing-form-wrap">
+                                <form action="#">
+                                    <div class="row">
+                                        <div class="size-50">
+                                            <div class="single-input-item">
+                                                <label for="f_name" class="required">First Name</label>
+                                                <input type="text" id="f_name" placeholder="First Name" required />
+                                            </div>
+                                        </div>
+                                        <div class="size-50">
+                                            <div class="single-input-item">
+                                                <label for="l_name" class="required">Last Name</label>
+                                                <input type="text" id="l_name" placeholder="Last Name" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-input-item">
+                                        <label for="email" class="required">Email Address</label>
+                                        <input type="email" id="email" placeholder="Email Address" required />
+                                    </div>
+                                    <div class="single-input-item">
+                                        <label for="com-name">Company Name</label>
+                                        <input type="text" id="com-name" placeholder="Company Name" />
+                                    </div>
+                                    <div class="single-input-item">
+                                        <label for="country" class="required">Country</label>
+                                        <select name="country nice-select" id="country"  class="country">
+                                            <option value="Afghanistan">Afghanistan</option>
+                                            <option value="Albania">Albania</option>
+                                            <option value="Algeria">Algeria</option>
+                                            <option value="Armenia">Armenia</option>
+                                            <option value="Bangladesh">Bangladesh</option>
+                                            <option value="India">India</option>
+                                            <option value="Pakistan">Pakistan</option>
+                                            <option value="England">England</option>
+                                            <option value="London">London</option>
+                                            <option value="London">London</option>
+                                            <option value="Chaina">China</option>
+                                        </select>
+                                    </div>
+                                    <div class="single-input-item">
+                                        <label for="street-address" class="required">Street address</label>
+                                        <input type="text" id="street-address" placeholder="Street address Line 1" required />
+                                    </div>
+                                    <div class="single-input-item">
+                                        <input type="text" placeholder="Street address Line 2 (Optional)" />
+                                    </div>
+                                    <div class="single-input-item">
+                                        <label for="town" class="required">Town / City</label>
+                                        <input type="text" id="town" placeholder="Town / City" required />
+                                    </div>
+                                    <div class="single-input-item">
+                                        <label for="state">State / Divition</label>
+                                        <input type="text" id="state" placeholder="State / Divition" />
+                                    </div>
+                                    <div class="single-input-item">
+                                        <label for="postcode" class="required">Postcode / ZIP</label>
+                                        <input type="text" id="postcode" placeholder="Postcode / ZIP" required />
+                                    </div>
+                                    <div class="single-input-item">
+                                        <label for="phone">Phone</label>
+                                        <input type="text" id="phone" placeholder="Phone" />
+                                    </div>
+                                    <div class="checkout-box-wrap">
+                                        <div class="single-input-item">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="create_pwd">
+                                                <label class="custom-control-label" for="create_pwd">Create an account?</label>
+                                                <div class="account-create single-form-row">
+                                                    <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
+                                                    <div class="single-input-item">
+                                                        <label for="pwd" class="required">Account Password</label>
+                                                        <input type="password" id="pwd" placeholder="Account Password" required="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="checkout-box-wrap">
+                                        <div class="single-input-item">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="ship_to_different">
+                                                <label class="custom-control-label" for="ship_to_different">Ship to a
+                                                    different address?</label>
+                                                <div class="ship-to-different single-form-row">
+                                                    <div class="row">
+                                                        <div class="size-50">
+                                                            <div class="single-input-item">
+                                                                <label for="f_name_2" class="required">First Name</label>
+                                                                <input type="text" id="f_name_2" placeholder="First Name" required />
+                                                            </div>
+                                                        </div>
+                                                        <div class="size-50">
+                                                            <div class="single-input-item">
+                                                                <label for="l_name_2" class="required">Last Name</label>
+                                                                <input type="text" id="l_name_2" placeholder="Last Name" required />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-input-item">
+                                                        <label for="email_2" class="required">Email Address</label>
+                                                        <input type="email" id="email_2" placeholder="Email Address" required />
+                                                    </div>
+                                                    <div class="single-input-item">
+                                                        <label for="com-name_2">Company Name</label>
+                                                        <input type="text" id="com-name_2" placeholder="Company Name" />
+                                                    </div>
+                                                    <div class="single-input-item">
+                                                        <label for="country_2" class="required">Country</label>
+                                                        <select name="country" id="country_2"  class="country">
+                                                            <option value="Bangladesh">Bangladesh</option>
+                                                            <option value="India">India</option>
+                                                            <option value="Pakistan">Pakistan</option>
+                                                            <option value="England">England</option>
+                                                            <option value="London">London</option>
+                                                            <option value="London">London</option>
+                                                            <option value="Chaina">Chaina</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="single-input-item">
+                                                        <label for="street-address_2" class="required">Street address</label>
+                                                        <input type="text" id="street-address_2" placeholder="Street address Line 1" required />
+                                                    </div>
+                                                    <div class="single-input-item">
+                                                        <input type="text" placeholder="Street address Line 2 (Optional)" />
+                                                    </div>
+                                                    <div class="single-input-item">
+                                                        <label for="town_2" class="required">Town / City</label>
+                                                        <input type="text" id="town_2" placeholder="Town / City" required />
+                                                    </div>
+                                                    <div class="single-input-item">
+                                                        <label for="state_2">State / Divition</label>
+                                                        <input type="text" id="state_2" placeholder="State / Divition" />
+                                                    </div>
+                                                    <div class="single-input-item">
+                                                        <label for="postcode_2" class="required">Postcode / ZIP</label>
+                                                        <input type="text" id="postcode_2" placeholder="Postcode / ZIP" required />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-input-item">
+                                        <label for="ordernote">Order Note</label>
+                                        <textarea name="ordernote" id="ordernote" cols="30" rows="3" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="size-50">
+                        <div class="order-summary-details">
+                            <h4 class="checkout-title">Your Order Summary</h4>
+                            <div class="order-summary-content">
+                                <div class="order-summary-table">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>Products</th>
+                                                <th>Total</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="product-details.html">Suscipit Vestibulum <strong> × 1</strong></a>
+                                                </td>
+                                                <td>$165.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="product-details.html">Ami Vestibulum suscipit <strong> × 4</strong></a>
+                                                </td>
+                                                <td>$165.00</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="product-details.html">Vestibulum suscipit <strong> × 2</strong></a>
+                                                </td>
+                                                <td>$165.00</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>Sub Total</td>
+                                                <td><strong>$400</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Shipping</td>
+                                                <td class="">
+                                                    <ul class="shipping-type">
+                                                        <li>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="flatrate" name="shipping" class="custom-control-input" checked />
+                                                                <label class="custom-control-label" for="flatrate">Flat
+                                                                    Rate: $70.00</label>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="custom-control custom-radio">
+                                                                <input type="radio" id="freeshipping" name="shipping" class="custom-control-input" />
+                                                                <label class="custom-control-label" for="freeshipping">Free
+                                                                    Shipping</label>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Total Amount</td>
+                                                <td><strong>$470</strong></td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <div class="order-payment-method">
+                                    <div class="single-payment-method show">
+                                        <div class="payment-method-name">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="cashon" name="paymentmethod" value="cash" class="custom-control-input" checked />
+                                                <label class="custom-control-label" for="cashon">Cash On Delivery</label>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method-details" data-method="cash">
+                                            <p>Pay with cash upon delivery.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-payment-method">
+                                        <div class="payment-method-name">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="directbank" name="paymentmethod" value="bank" class="custom-control-input" />
+                                                <label class="custom-control-label" for="directbank">Direct Bank
+                                                    Transfer</label>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method-details" data-method="bank">
+                                            <p>Make your payment directly into our bank account. Please use your Order
+                                                ID as the payment reference. Your order will not be shipped until the
+                                                funds have cleared in our account..</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-payment-method">
+                                        <div class="payment-method-name">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="checkpayment" name="paymentmethod" value="check" class="custom-control-input" />
+                                                <label class="custom-control-label" for="checkpayment">Pay with
+                                                    Check</label>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method-details" data-method="check">
+                                            <p>Please send a check to Store Name, Store Street, Store Town, Store State
+                                                / County, Store Postcode.</p>
+                                        </div>
+                                    </div>
+                                    <div class="single-payment-method">
+                                        <div class="payment-method-name">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" id="paypalpayment" name="paymentmethod" value="paypal" class="custom-control-input" />
+                                                <label class="custom-control-label" for="paypalpayment">Paypal <img src="img/paypal-card.jpg" class="img-fluid paypal-card" alt="Paypal" /></label>
+                                            </div>
+                                        </div>
+                                        <div class="payment-method-details" data-method="paypal">
+                                            <p>Pay via PayPal; you can pay with your credit card if you don’t have a
+                                                PayPal account.</p>
+                                        </div>
+                                    </div>
+                                    <div class="summary-footer-area">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="terms" required />
+                                            <label class="custom-control-label" for="terms">I have read and agree to
+                                                the website <a href="index.html">terms and conditions.</a></label>
+                                        </div>
+                                        <button type="submit" class="btn btn-sqr">Place Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="footer-wrapper">
+        <div class="footer-widget-area section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="size-25 size-50">
+                        <div class="widget-item mt-40">
+                            <h5 class="widget-title">My Account</h5>
+                            <div class="widget-body">
+                                <ul class="location-wrap">
+                                    <li><i class="ion-ios-location-outline"></i>184 Main Rd E, St Albans VIC 3021, Australia</li>
+                                    <li><i class="ion-ios-email-outline"></i>Mail Us: <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></li>
+                                    <li><i class="ion-ios-telephone-outline"></i>Phone: <a href="+0025425456554">+ 00 254 254565</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="size-16 size-25 size-50">
+                        <div class="widget-item mt-40">
+                            <h5 class="widget-title">Categories</h5>
+                            <div class="widget-body">
+                                <ul class="useful-link">
+                                    <li><a href="#">Ecommerce</a></li>
+                                    <li><a href="#">Shopify</a></li>
+                                    <li><a href="#">Prestashop</a></li>
+                                    <li><a href="#">Opencart</a></li>
+                                    <li><a href="#">Magento</a></li>
+                                    <li><a href="#">Jigoshop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="size-16 size-25 size-50">
+                        <div class="widget-item mt-40">
+                            <h5 class="widget-title">Information</h5>
+                            <div class="widget-body">
+                                <ul class="useful-link">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                    <li><a href="#">Returns & Exchanges</a></li>
+                                    <li><a href="#">Shipping & Delivery</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="size-16 size-25 size-50">
+                        <div class="widget-item mt-40">
+                            <h5 class="widget-title">Quick Links</h5>
+                            <div class="widget-body">
+                                <ul class="useful-link">
+                                    <li><a href="#">Store Location</a></li>
+                                    <li><a href="#">My Account</a></li>
+                                    <li><a href="#">Orders Tracking</a></li>
+                                    <li><a href="#">Size Guide</a></li>
+                                    <li><a href="#">Shopping Rates</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="size-50 ">
+                        <div class="copyright-text">
+                            <p>Copyright <script>document.write(new Date().getFullYear());</script>.<a href="index.html">
+                                OnlineShop</a></p>
+                        </div>
+                    </div>
+                    <div class="size-50">
+                        <div class="footer-social-link">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="search-wrapper">
+        <div class="search-inner">
+            <div class="search-inner__close">
+                <i class="ion-android-close"></i>
+            </div>
+            <div class="container">
+                <div class="search-box">
+                    <form class="">
+                        <input type="text" placeholder="Search entire storage here...">
+                        <button class="search-btn"><i class="ion-ios-search-strong"></i>search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="minicart-wrapper">
+        <div class="minicart-inner">
+            <div class="minicart-inner__overlay"></div>
+            <div class="minicart-inner-content">
+                <div class="minicart-close">
+                    <i class="ion-android-close"></i>
+                </div>
+                <div class="minicart-content-box">
+                    <div class="minicart-item-wrapper">
+                        <ul>
+                            <li class="minicart-item">
+                                <div class="minicart-thumb">
+                                    <a href="product-details.html">
+                                        <img src="img/cart/cart-1.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="minicart-content">
+                                    <h3 class="product-name">
+                                        <a href="product-details.html">Flowers bouquet pink for all flower lovers</a>
+                                    </h3>
+                                    <p>
+                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
+                                        <span class="cart-price">$100.00</span>
+                                    </p>
+                                </div>
+                                <button class="minicart-remove"><i class="ion-android-close"></i></button>
+                            </li>
+                            <li class="minicart-item">
+                                <div class="minicart-thumb">
+                                    <a href="product-details.html">
+                                        <img src="img/cart/cart-2.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="minicart-content">
+                                    <h3 class="product-name">
+                                        <a href="product-details.html">Jasmine flowers white for all flower lovers</a>
+                                    </h3>
+                                    <p>
+                                        <span class="cart-quantity">1 <strong>&times;</strong></span>
+                                        <span class="cart-price">$80.00</span>
+                                    </p>
+                                </div>
+                                <button class="minicart-remove"><i class="ion-android-close"></i></button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="minicart-pricing-box">
+                        <ul>
+                            <li>
+                                <span>sub-total</span>
+                                <span><strong>$300.00</strong></span>
+                            </li>
+                            <li>
+                                <span>Eco Tax (-2.00)</span>
+                                <span><strong>$10.00</strong></span>
+                            </li>
+                            <li>
+                                <span>VAT (20%)</span>
+                                <span><strong>$60.00</strong></span>
+                            </li>
+                            <li class="total">
+                                <span>total</span>
+                                <span><strong>$370.00</strong></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="minicart-button">
+                        <a href="cart.html"><i class="fa fa-shopping-cart"></i> view cart</a>
+                        <a href="cart.html"><i class="fa fa-share"></i> checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Scroll to Top -->
+    <div class="to-top">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+<!--=======================Javascript============================-->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/xzoom/dist/xzoom.min.js"></script>
+    <script src="js/script.js"></script>
+
+<!--=== All script ===-->
+    <!--Sidebar menu basket(icon)-->
+     <script>
+            $(".minicart-btn").on('click', function(){
+                $("body").addClass('fix');
+                $(".minicart-inner").addClass('show')
+            })
+            //close menu icon x
+            $(".search-inner__close, .minicart-close, .minicart-inner__overlay").on('click', function(){
+                $("body").removeClass('fix');
+                $(".search-inner, .minicart-inner").removeClass('show')
+            })
+        </script>
+    <!-- To-top	-->
+    <script>
+            $(function(){$.fn.scrollToTop=function(){
+                $(this).hide().removeAttr("href");
+                if($(window).scrollTop()!="0"){
+                    $(this).fadeIn("slow")
+                }
+                var scrollDiv=$(this);
+                $(window).scroll(function(){
+                    if($(window).scrollTop()=="0"){
+                        $(scrollDiv).fadeOut("slow")
+                    }else{$(scrollDiv).fadeIn("slow")}
+                });
+                $(this).click(function(){
+                    $("html, body").animate({scrollTop:0},"slow")
+                })
+            }});
+            // Вызов
+            $(function() {
+                $(".to-top").scrollToTop();
+            });
+        </script>
+    <!--  Sticky menu  -->
+    <script>
+
+        $(document).ready(function(){
+            setInterval(checkScroll, 20);
+            function checkScroll() {
+                var nav = $(".navbar-aside");
+                if ($(document).scrollTop() > 0 && !nav.hasClass("sticky")) {
+                    nav.addClass("sticky");
+                } else if ($(document).scrollTop() === 0 && nav.hasClass("sticky")) {
+                    nav.removeClass("sticky");
+                }
+            }
+        });
+    </script>
+    <!--Active link top menu-->
+    <script>
+            var path = '/shop.html';
+            var page = path.split("/").pop();
+            var element = document.querySelectorAll('a[href="' + page  + '"]');
+            element[0].classList.add("active");
+        </script>
+
+</body>
+</html>

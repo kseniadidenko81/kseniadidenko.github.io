@@ -1,0 +1,951 @@
+doctype html
+| PASTE YOUR HTML CODE HERE
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  meta(name='description' content='meta description')
+  title OnlineShop
+  link(rel='shortcut icon' href='img/favicon.ico' type='image/x-icon')
+  link(rel='stylesheet' href='https://colorlib.com/preview/theme/cozastore/fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.0/css/ionicons.min.css')
+  link(href='css/style.css' rel='stylesheet')
+  link(href='css/media.css' rel='stylesheet')
+#wrapper
+header#nav.header-area
+  .page-header
+    .header-panel
+      .container
+        .row
+          .size-50
+            .welcome-message
+              p Welcome to our online store
+          .size-50.text-right
+            .header-wrap-settings
+              ul.header-settings
+                li.curreny-wrap
+                  | $ Dollar (US)
+                  i.fa.fa-angle-down
+                  ul.dropdown-list.curreny-list
+                    li
+                      a(href='#') $ USD
+                    li
+                      a(href='#')  &euro; EURO
+                li.language
+                  img(src='img/icon/en.png' alt='flag')
+                  |  English
+                  i.fa.fa-angle-down
+                  ul.dropdown-list
+                    li
+                      a(href='#')
+                        img(src='img/icon/en.png' alt='flag')
+                        |  english
+                    li
+                      a(href='#')
+                        img(src='img/icon/fr.png' alt='flag')
+                        |  french
+    .navbar-aside.section
+      .container
+        .row
+          .size-25
+            .logo
+              a(href='index.html')
+                img(src='img/logo/logo.png' alt='')
+          .size-50
+            .navbar-nav-wrap
+              nav.main-nav.desktop-nav
+                ul
+                  li
+                    a.active(href='./')
+                      i.fa.fa-home(aria-hidden='true')
+                  li
+                    a(href='shop.html')
+                      | shop 
+                      i.fa.fa-angle-down
+                    ul.dropdown
+                      li
+                        a(href='cart.html') cart
+                      li
+                        a(href='checkout.html') checkout
+                  li
+                    a(href='blog.html') Blog
+                  li
+                    a(href='contact-us.html') Contact us
+          .size-25
+            .nav-configure-wrapper
+              .nav-configure-area
+                ul.nav
+                  li
+                    a.off-btn(href='#')
+                      i.ion-ios-search-strong
+                  li.user-hover
+                    a(href='#')
+                      i.ion-ios-gear-outline
+                    ul.dropdown-list
+                      li
+                        a(href='login-register.html') login-register
+                      li
+                        a(href='my-account.html') my account
+                  li
+                    a.minicart-btn(href='#')
+                      i.ion-bag
+                      .notification 2
+  .mobile-header.desktop-block.mobile-block.sticky
+    .container
+      .row
+        .size-100
+          .mobile-main-header
+            .mobile-logo
+              a(href='index.html')
+                img(src='img/logo/logo.png' alt='Brand Logo')
+            .mobile-menu-toggler
+              .mini-cart-wrap
+                a(href='cart.html')
+                  i.ion-bag
+              .mobile-menu-btn
+                .off-btn
+                  i.ion-navicon
+aside.aside-wrapper
+  .aside-overlay
+  .aside-inner-content
+    .btn-close-aside
+      i.ion-android-close
+    .aside-inner
+      .search-box-aside
+        form
+          input(type='text' placeholder='Search Here...')
+          button.search-btn
+            i.ion-ios-search-strong
+      .mobile-navigation
+        nav
+          ul.mobile-menu
+            li.menu-item-has-children
+              a.active(href='index.html') Home
+            li.menu-item-has-children
+              span.menu-expand
+                i
+              a(href='shop.html') shop
+              ul.dropdown
+                li
+                  a(href='cart.html') cart
+                li
+                  a(href='checkout.html') checkout
+            li.menu-item-has-children
+              a(href='blog.html') Blog
+            li
+              a(href='contact-us.html') Contact us
+      .mobile-settings
+        ul.nav
+          li
+            .dropdown.mobile-top-dropdown
+              a#currency.dropdown-toggle.dropdown-toggle-currency(href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Currency
+                i.fa.fa-angle-down
+              .dropdown-menu.dropdown-menu-currency(aria-labelledby='currency')
+                a.dropdown-item(href='#') $ USD
+                a.dropdown-item(href='#') $ EURO
+          li
+            .dropdown.mobile-top-dropdown
+              a#myaccount.dropdown-toggle.dropdown-toggle-account(href='#' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | My Account
+                i.fa.fa-angle-down
+              .dropdown-menu.dropdown-menu-account(aria-labelledby='myaccount')
+                a.dropdown-item(href='my-account.html') my account
+                a.dropdown-item(href='login-register.html') login-register
+      .widget-area
+        .aside-contact-widget
+          ul
+            li
+              i.fa.fa-mobile
+              a(href='#') 0123456789
+            li
+              i.fa.fa-envelope-o
+              a(href='#') info@yourdomain.com
+        .aside-social-widget
+          a(href='#')
+            i.fa.fa-facebook
+          a(href='#')
+            i.fa.fa-twitter
+          a(href='#')
+            i.fa.fa-pinterest-p
+          a(href='#')
+            i.fa.fa-linkedin
+          a(href='#')
+            i.fa.fa-youtube-play
+main#content
+  section.hero-slider.section-padding
+    .container
+      .row
+        .size-100
+          #container-slides
+            .slide
+              .hero-slider-content.slide-1
+                h5.slide-subtitle Top Selling!
+                h2.slide-title New Collection
+                p.slide-desc
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
+                a.btn.btn-hero(href='shop.html' tabindex='0') SHOP NOW
+            .slide
+              .hero-slider-content.slide-1
+                h5.slide-subtitle Best Selling!
+                h2.slide-title Top Collection
+                p.slide-desc
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
+                a.btn.btn-hero(href='shop.html' tabindex='-1') SHOP NOW
+            .slide
+              .hero-slider-content.slide-1
+                h5.slide-subtitle Top Selling!
+                h2.slide-title New Collection
+                p.slide-desc
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
+                a.btn.btn-hero(href='shop.html' tabindex='0') SHOP NOW
+            .slide
+              .hero-slider-content.slide-1
+                h5.slide-subtitle Top Selling!
+                h2.slide-title New Collection
+                p.slide-desc
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidid
+                a.btn.btn-hero(href='shop.html' tabindex='0') SHOP NOW
+  section.service-policy-area.section-padding
+    .container
+      .row
+        .size-33
+          .service-policy-item.bg-1
+            .policy-icon
+              img(src='img/icon/policy-1.png' alt='policy icon')
+            .policy-content
+              h5.policy-title FREE SHIPPING
+              p.policy-desc Free shipping on all order
+        .size-33
+          .service-policy-item.bg-2
+            .policy-icon
+              img(src='img/icon/policy-2.png' alt='policy icon')
+            .policy-content
+              h5.policy-title ONLINE SUPPORT
+              p.policy-desc Online support 24 hours a day
+        .size-33
+          .service-policy-item.bg-3
+            .policy-icon
+              img(src='img/icon/policy-3.png' alt='policy icon')
+            .policy-content
+              h5.policy-title MONEY RETURN
+              p.policy-desc Back guarantee under 5 days
+  section.product-items.section-padding
+    .container
+      .row
+        .size-100
+          .section-title
+            h2.title Our Product
+            p.sub-title Lorem ipsum dolor sit amet consectetur adipisicing
+      .row
+        .size-100
+          .slider
+            .slider__wrapper
+              .slider__item
+                .product-item
+                  .product-thumb
+                    a(href='product-details.html' tabindex='0')
+                      img(src='img/product/product-1.jpg' alt='')
+                  .product-content
+                    h5.product-name
+                      a(href='product-details.html' tabindex='0') Primitive Mens shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .product-action-link
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Wishlist' tabindex='0')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Add To Cart' tabindex='0')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view' tabindex='0')
+                        span(data-toggle='tooltip' title='' data-original-title='Quick View')
+                          i.ion-ios-eye-outline
+              .slider__item
+                .product-item
+                  .product-thumb
+                    a(href='product-details.html' tabindex='0')
+                      img(src='img/product/product-2.jpg' alt='')
+                  .product-content
+                    h5.product-name
+                      a(href='product-details.html' tabindex='0') Primitive Mens shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .product-action-link
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Wishlist' tabindex='0')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Add To Cart' tabindex='0')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view' tabindex='0')
+                        span(data-toggle='tooltip' title='' data-original-title='Quick View')
+                          i.ion-ios-eye-outline
+              .slider__item
+                .product-item
+                  .product-thumb
+                    a(href='product-details.html' tabindex='0')
+                      img(src='img/product/product-3.jpg' alt='')
+                  .product-content
+                    h5.product-name
+                      a(href='product-details.html' tabindex='0') Primitive Mens shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .product-action-link
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Wishlist' tabindex='0')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Add To Cart' tabindex='0')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view' tabindex='0')
+                        span(data-toggle='tooltip' title='' data-original-title='Quick View')
+                          i.ion-ios-eye-outline
+              .slider__item
+                .product-item
+                  .product-thumb
+                    a(href='product-details.html' tabindex='0')
+                      img(src='img/product/product-4.jpg' alt='')
+                  .product-content
+                    h5.product-name
+                      a(href='product-details.html' tabindex='0') Primitive Mens shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .product-action-link
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Wishlist' tabindex='0')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Add To Cart' tabindex='0')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view' tabindex='0')
+                        span(data-toggle='tooltip' title='' data-original-title='Quick View')
+                          i.ion-ios-eye-outline
+              .slider__item
+                .product-item
+                  .product-thumb
+                    a(href='product-details.html' tabindex='0')
+                      img(src='img/product/product-1.jpg' alt='')
+                  .product-content
+                    h5.product-name
+                      a(href='product-details.html' tabindex='0') Primitive Mens shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .product-action-link
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Wishlist' tabindex='0')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Add To Cart' tabindex='0')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view' tabindex='0')
+                        span(data-toggle='tooltip' title='' data-original-title='Quick View')
+                          i.ion-ios-eye-outline
+              .slider__item
+                .product-item
+                  .product-thumb
+                    a(href='product-details.html' tabindex='0')
+                      img(src='img/product/product-2.jpg' alt='')
+                  .product-content
+                    h5.product-name
+                      a(href='product-details.html' tabindex='0') Primitive Mens shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .product-action-link
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Wishlist' tabindex='0')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Add To Cart' tabindex='0')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view' tabindex='0')
+                        span(data-toggle='tooltip' title='' data-original-title='Quick View')
+                          i.ion-ios-eye-outline
+              .slider__item
+                .product-item
+                  .product-thumb
+                    a(href='product-details.html' tabindex='0')
+                      img(src='img/product/product-3.jpg' alt='')
+                  .product-content
+                    h5.product-name
+                      a(href='product-details.html' tabindex='0') Primitive Mens shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .product-action-link
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Wishlist' tabindex='0')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='' data-original-title='Add To Cart' tabindex='0')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view' tabindex='0')
+                        span(data-toggle='tooltip' title='' data-original-title='Quick View')
+                          i.ion-ios-eye-outline
+            a.slider__control.slider__control_left(href='#' role='button')
+            a.slider__control.slider__control_right(href='#' role='button')
+  section.top-seller-area.section-padding
+    .container
+      .row
+        .size-100
+          .section-title
+            h2.title top seller
+            p.sub-title Lorem ipsum dolor sit amet consectetur adipisicing
+      .row
+        .size-100
+          .slider.slider3
+            .slider__wrapper
+              .slider__item.pro-item
+                .pro-item-small
+                  .product-thumb
+                    a(href='product-details.html')
+                      img(src='img/product/pro-small-1.jpg' alt='')
+                  .pro-small-content
+                    h6.product-name
+                      a(href='product-details.html') Simple Fabric Shoe
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .ratings
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                    .product-link
+                      a(href='#' data-toggle='tooltip' title='Wishlist')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='Add To Cart')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view')
+                        span(data-toggle='tooltip' title='Quick View')
+                          i.ion-ios-eye-outline
+                .pro-item-small
+                  .product-thumb
+                    a(href='product-details.html')
+                      img(src='img/product/pro-small-2.jpg' alt='')
+                  .pro-small-content
+                    h6.product-name
+                      a(href='product-details.html') exclusive mens shoe
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .ratings
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                    .product-link
+                      a(href='#' data-toggle='tooltip' title='Wishlist')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='Add To Cart')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view')
+                        span(data-toggle='tooltip' title='Quick View')
+                          i.ion-ios-eye-outline
+              .slider__item.pro-item
+                .pro-item-small.mt-30
+                  .product-thumb
+                    a(href='product-details.html')
+                      img(src='img/product/pro-small-3.jpg' alt='')
+                  .pro-small-content
+                    h6.product-name
+                      a(href='product-details.html') Quickiin Mens shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .ratings
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                    .product-link
+                      a(href='#' data-toggle='tooltip' title='Wishlist')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='Add To Cart')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view')
+                        span(data-toggle='tooltip' title='Quick View')
+                          i.ion-ios-eye-outline
+                .pro-item-small
+                  .product-thumb
+                    a(href='product-details.html')
+                      img(src='img/product/pro-small-4.jpg' alt='')
+                  .pro-small-content
+                    h6.product-name
+                      a(href='product-details.html') Primitive Men shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .ratings
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                    .product-link
+                      a(href='#' data-toggle='tooltip' title='Wishlist')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='Add To Cart')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view')
+                        span(data-toggle='tooltip' title='Quick View')
+                          i.ion-ios-eye-outline
+              .slider__item.pro-item
+                .pro-item-small
+                  .product-thumb
+                    a(href='product-details.html')
+                      img(src='img/product/pro-small-2.jpg' alt='')
+                  .pro-small-content
+                    h6.product-name
+                      a(href='product-details.html') Sports Mens shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .ratings
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                    .product-link
+                      a(href='#' data-toggle='tooltip' title='Wishlist')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='Add To Cart')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view')
+                        span(data-toggle='tooltip' title='Quick View')
+                          i.ion-ios-eye-outline
+                .pro-item-small
+                  .product-thumb
+                    a(href='product-details.html')
+                      img(src='img/product/pro-small-3.jpg' alt='')
+                  .pro-small-content
+                    h6.product-name
+                      a(href='product-details.html') Quickiin Mens shoes
+                    .price-box
+                      span.price-regular $80.00
+                      span.price-old
+                        del $70.00
+                    .ratings
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                      span
+                        i.ion-android-star
+                    .product-link
+                      a(href='#' data-toggle='tooltip' title='Wishlist')
+                        i.ion-android-favorite-outline
+                      a(href='#' data-toggle='tooltip' title='Add To Cart')
+                        i.ion-bag
+                      a(href='#' data-toggle='modal' data-target='#quick_view')
+                        span(data-toggle='tooltip' title='Quick View')
+                          i.ion-ios-eye-outline
+            a.slider__control.slider__control_left(href='#' role='button')
+            a.slider__control.slider__control_right(href='#' role='button')
+  section.latest-blog-area.section-padding
+    .container
+      .row
+        .size-100
+          .section-title
+            h2.title our blog
+            p.sub-title Lorem ipsum dolor sit amet consectetur adipisicing
+      .row
+        .size-100
+          .slider.slider2
+            .slider__wrapper
+              .slider__item.slider-post-item
+                .blog-post-item
+                  .blog-thumb
+                    a(href='blog-details.html')
+                      img(src='img/blog/blog-1.jpg' alt='blog thumb')
+                  .blog-content
+                    h5.blog-title
+                      a(href='blog-details.html')
+                        | Celebrity Daughter Opens About to Having Her Eye color
+                    ul.blog-meta
+                      li
+                        span By: 
+                        | Admin,
+                      li
+                        span On: 
+                        | 14.07.2029
+                    a.read-more(href='blog-details.html') Read More...
+              .slider__item.slider-post-item
+                .blog-post-item
+                  .blog-thumb
+                    a(href='blog-details.html')
+                      img(src='img/blog/blog-2.jpg' alt='blog thumb')
+                  .blog-content
+                    h5.blog-title
+                      a(href='blog-details.html')
+                        | Sotto Winner Offering Money To Any Man That Will Date Her
+                    ul.blog-meta
+                      li
+                        span By: 
+                        | Admin,
+                      li
+                        span On: 
+                        | 14.07.2029
+                    a.read-more(href='blog-details.html') Read More...
+              .slider__item.slider-post-item
+                .blog-post-item
+                  .blog-thumb
+                    a(href='blog-details.html')
+                      img(src='img/blog/blog-3.jpg' alt='blog thumb')
+                  .blog-content
+                    h5.blog-title
+                      a(href='blog-details.html')
+                        | Children Left Home Alone For 4 Days In TV Series Experiment
+                    ul.blog-meta
+                      li
+                        span By: 
+                        | Admin,
+                      li
+                        span On: 
+                        | 14.07.2029
+                    a.read-more(href='blog-details.html') Read More...
+              .slider__item.slider-post-item
+                .blog-post-item
+                  .blog-thumb
+                    a(href='blog-details.html')
+                      img(src='img/blog/blog-2.jpg' alt='blog thumb')
+                  .blog-content
+                    h5.blog-title
+                      a(href='blog-details.html')
+                        | People Are Willing Lie When To Comes Money Research from
+                    ul.blog-meta
+                      li
+                        span By: 
+                        | Admin,
+                      li
+                        span On: 
+                        | 14.07.2029
+                    a.read-more(href='blog-details.html') Read More...
+            a.slider__control.slider__control_left(href='#' role='button')
+            a.slider__control.slider__control_right(href='#' role='button')
+  section.brand-area.section-padding
+    .container
+      .row
+        .size-100
+          .brand-slider
+            .brand-wrap
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br1.png' alt='')
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br2.png' alt='')
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br3.png' alt='')
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br4.png' alt='')
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br5.png' alt='')
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br1.png' alt='')
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br2.png' alt='')
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br3.png' alt='')
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br4.png' alt='')
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br5.png' alt='')
+              .brand-item
+                a(href='')
+                  img(src='img/brand/br3.png' alt='')
+footer#footer.footer-wrapper
+  .footer-widget-area
+    .container
+      .row
+        .size-25.size-50
+          .widget-item.mt-40
+            h5.widget-title My Account
+            .widget-body
+              ul.location-wrap
+                li
+                  i.ion-ios-location-outline
+                  | 184 Main Rd E, St Albans VIC 3021, Australia
+                li
+                  i.ion-ios-email-outline
+                  | Mail Us: 
+                  a(href='mailto:yourmail@gmail.com') yourmail@gmail.com
+                li
+                  i.ion-ios-telephone-outline
+                  | Phone: 
+                  a(href='+0025425456554') + 00 254 254565
+        .size-16.size-25.size-50
+          .widget-item.mt-40
+            h5.widget-title Categories
+            .widget-body
+              ul.useful-link
+                li
+                  a(href='#') Ecommerce
+                li
+                  a(href='#') Shopify
+                li
+                  a(href='#') Prestashop
+                li
+                  a(href='#') Opencart
+                li
+                  a(href='#') Magento
+                li
+                  a(href='#') Jigoshop
+        .size-16.size-25.size-50
+          .widget-item.mt-40
+            h5.widget-title Information
+            .widget-body
+              ul.useful-link
+                li
+                  a(href='#') Home
+                li
+                  a(href='#') About Us
+                li
+                  a(href='#') Contact Us
+                li
+                  a(href='#') Returns &amp; Exchanges
+                li
+                  a(href='#') Shipping &amp; Delivery
+                li
+                  a(href='#') Privacy Policy
+        .size-16.size-25.size-50
+          .widget-item.mt-40
+            h5.widget-title Quick Links
+            .widget-body
+              ul.useful-link
+                li
+                  a(href='#') Store Location
+                li
+                  a(href='#') My Account
+                li
+                  a(href='#') Orders Tracking
+                li
+                  a(href='#') Size Guide
+                li
+                  a(href='#') Shopping Rates
+                li
+                  a(href='#') Contact Us
+  .footer-bottom
+    .container
+      .row
+        .size-50
+          .copyright-text
+            p
+              | Copyright 
+              script.
+                document.write(new Date().getFullYear());
+              | .
+              a(href='index.html')
+                | OnlineShop
+        .size-50
+          .footer-social-link
+            a(href='#')
+              i.fa.fa-facebook
+            a(href='#')
+              i.fa.fa-twitter
+            a(href='#')
+              i.fa.fa-linkedin
+            a(href='#')
+              i.fa.fa-instagram
+section.search-wrapper
+  .search-inner
+    .search-inner__close
+      i.ion-android-close
+    .container
+      .search-box
+        form
+          input(type='text' placeholder='Search entire storage here...')
+          button.search-btn
+            i.ion-ios-search-strong
+            | search
+section.minicart-wrapper
+  .minicart-inner
+    .minicart-inner__overlay
+    .minicart-inner-content
+      .minicart-close
+        i.ion-android-close
+      .minicart-content-box
+        .minicart-item-wrapper
+          ul
+            li.minicart-item
+              .minicart-thumb
+                a(href='product-details.html')
+                  img(src='img/cart/cart-1.jpg' alt='product')
+              .minicart-content
+                h3.product-name
+                  a(href='product-details.html') Flowers bouquet pink for all flower lovers
+                p
+                  span.cart-quantity
+                    | 1 
+                    strong &times;
+                  span.cart-price $100.00
+              button.minicart-remove
+                i.ion-android-close
+            li.minicart-item
+              .minicart-thumb
+                a(href='product-details.html')
+                  img(src='img/cart/cart-2.jpg' alt='product')
+              .minicart-content
+                h3.product-name
+                  a(href='product-details.html') Jasmine flowers white for all flower lovers
+                p
+                  span.cart-quantity
+                    | 1 
+                    strong &times;
+                  span.cart-price $80.00
+              button.minicart-remove
+                i.ion-android-close
+        .minicart-pricing-box
+          ul
+            li
+              span sub-total
+              span
+                strong $300.00
+            li
+              span Eco Tax (-2.00)
+              span
+                strong $10.00
+            li
+              span VAT (20%)
+              span
+                strong $60.00
+            li.total
+              span total
+              span
+                strong $370.00
+        .minicart-button
+          a(href='cart.html')
+            i.fa.fa-shopping-cart
+            |  view cart
+          a(href='cart.html')
+            i.fa.fa-share
+            |  checkout
+//-Scroll to Top 
+.to-top
+  i.fa.fa-angle-up
+    //- =======================Javascript============================
+script(src='js/jquery-3.4.1.min.js')
+script(src='https://unpkg.com/xzoom/dist/xzoom.min.js')
+script(src='js/script.js')
+  //- === All script ===
+  //- Sidebar menu basket(icon)
+  //- Mobile Sidebar menu (hamburger)
+script.
+  $(".off-btn").on('click', function () {
+  $("body").addClass('fix');
+  $(".aside-wrapper").addClass('open');
+  });
+  $(".btn-close-aside,.aside-overlay").on('click', function () {
+  $("body").removeClass('fix');
+  $(".aside-wrapper").removeClass('open');
+  });
+  //- Right menu minicart
+script.
+  $(".minicart-btn").on('click', function(){
+  $("body").addClass('fix');
+  $(".minicart-inner").addClass('show')
+  })
+  //close menu icon x
+  $(".search-inner__close, .minicart-close, .minicart-inner__overlay, .btn-close-aside").on('click', function(){
+  $("body").removeClass('fix');
+  $(".search-inner, .minicart-inner").removeClass('show');
+  $(".aside-wrapper").removeClass('open');
+  })
+// Navbar
+script.
+  $(document).ready(function(){
+  setInterval(checkScroll, 20);
+  function checkScroll() {
+  var nav = $(".navbar-aside");
+  if ($(document).scrollTop() > 0 && !nav.hasClass("sticky")) {
+  nav.addClass("sticky");
+  } else if ($(document).scrollTop() === 0 && nav.hasClass("sticky")) {
+  nav.removeClass("sticky");
+  }
+  }
+  });
+  //- To-top
+script.
+  $(function(){$.fn.scrollToTop=function(){
+  $(this).hide().removeAttr("href");
+  if($(window).scrollTop()!="0"){
+  $(this).fadeIn("slow")
+  }
+  var scrollDiv=$(this);
+  $(window).scroll(function(){
+  if($(window).scrollTop()=="0"){
+  $(scrollDiv).fadeOut("slow")
+  }else{$(scrollDiv).fadeIn("slow")}
+  });
+  $(this).click(function(){
+  $("html, body").animate({scrollTop:0},"slow")
+  })
+  }});
+  
+  $(function() {
+  $(".to-top").scrollToTop();
+  });
+  //- Active link top menu
+script.
+  var path = window.location.pathname;
+  var page = path.split("/").pop();
+  var element = document.querySelectorAll('a[href="' + page  + '"]');
+  element[0].classList.add("active");
+  //- Dropdown menu
+script.
+  $(".dropdown-toggle-account").click(function() {
+  $(".dropdown-menu-account").toggleClass("active", 500);
+  $(this).toggleClass("active");
+  });
+  $(".dropdown-toggle-currency").click(function() {
+  $(".dropdown-menu-currency").toggleClass("active", 500);
+  $(this).toggleClass("active");
+  });
+  $(".menu-expand").click(function() {
+  $(".dropdown").toggleClass("active", 500);
+  $(this).toggleClass("active");
+  });
