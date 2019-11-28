@@ -87,30 +87,30 @@
 @media (min-width: 768px) {
   h6, .heading {
     line-height: 1.33333;
-    font-size: 15px;
+    font-size: 1em;
   }
   h5 {
     line-height: 1.44444;
-    font-size: 18px;
+    font-size: 1.2em;
   }
   h4 {
     line-height: 1.25;
-    font-size: 24px;
+    font-size: 1.5em;
   }
   h3 {
     line-height: 1.27778;
-    font-size: 36px;
+    font-size: 2em;
   }
   h2 {
     line-height: 1.17391;
-    font-size: 45px;
+    font-size: 2.8em;
   }
   h1 {
     line-height: 1.15789;
-    font-size: 76px;
+    font-size: 4em;
   }
   .container {
-      width: 720px;
+    width: 720px;
   }
   .slide img {
     width: inherit;
@@ -375,7 +375,7 @@
     margin-top: 30px;
   }
   .tabs__item.tabs .nav-custom-tabs li a {
-    font-size: 15px;
+    font-size: 14px;
     padding: 10px 20px;
   }  
   .show {
