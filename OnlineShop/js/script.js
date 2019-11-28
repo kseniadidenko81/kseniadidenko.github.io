@@ -146,15 +146,6 @@ function showSlides() {
 	slides[slideIndex-1].style.display = "block";
 	setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
-// var slides = document.querySelectorAll('#container-slides .slide');
-// var currentSlide = 0;
-// var slideInterval = setInterval(nextSlide,3000);
-//
-// function nextSlide() {
-// 	slides[currentSlide].className = 'slide';
-// 	currentSlide = (currentSlide+1)%slides.length;
-// 	slides[currentSlide].className = 'slide showing';
-// }
 
 //----------------------------jQuery Scripts--------------------------
 (function ($) {
