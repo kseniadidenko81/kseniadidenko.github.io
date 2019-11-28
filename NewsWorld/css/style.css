@@ -2105,7 +2105,7 @@ img {
 }
 .post__item-3 .tag-list__item li a {
   color: #a9a9a9;
-  font-size: 0.75em;
+  font-size: 12px;
   padding: 5px;
 }
 .tag-list__item li a:hover {
