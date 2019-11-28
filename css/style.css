@@ -6,13 +6,6 @@
     padding: 0;
     margin: 0;
 }
-html {
-    font-size: 1em;
-    color:#000;
-    background:#FFF;
-    line-height: 1.15;
-    height: 100%;
-}
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
     display: block;
 }
@@ -66,7 +59,7 @@ img {
 body {
     font-family: 'helveticaneuecyr', sans-serif;
     overflow: hidden;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
     display: flex;
@@ -74,7 +67,9 @@ body {
     height: 100%;
 }
 html {
-    font-size: 1em;
+    font-size: 16px;
+    color:#000;
+    background:#FFF;
     line-height: 1.15;
     height: 100%;
 }
@@ -93,16 +88,16 @@ h4 {
     z-index: 1
 }
 h2 {
-    font-size: 36px;
+    font-size: 2.25em;
     font-weight: 400;
     letter-spacing: 9px
 }
 h3 {
-    font-size: 22px;
+    font-size: 1.25em;
     font-weight: 600;
 }
 h4 {
-    font-size: 20px;
+    font-size: 1.2em;
     text-align: center;
     font-weight: 600;
     margin: 15px 0;
@@ -161,7 +156,7 @@ li {
     }
 }
 #typed {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 .typed-cursor {
     opacity: 1;
@@ -216,7 +211,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     line-height: 30px;
     font-family: Verdana;
-    font-size: 20px;
+    font-size: 1.25em;
     color: #fff;
 }
 .preloader .preloader-box>div:nth-child(1) {
@@ -288,7 +283,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 300;
 }
 .page-header__text {
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 24px;
     font-weight: 300;
     padding-left: 10px;
@@ -351,7 +346,7 @@ body::-webkit-scrollbar-thumb {
     display: block;
     vertical-align: top;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.2em;
     padding-top: 15px;
     text-align: center;
 }
@@ -449,7 +444,7 @@ body::-webkit-scrollbar-thumb {
     margin: 5px auto 0;
 }
 .benefits__main-text {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 300;
     margin-top: 0;
     padding-top: 20px;
@@ -515,7 +510,7 @@ body::-webkit-scrollbar-thumb {
 }
 .benefits__text {
     position: relative;
-    font-size: 16px;
+    font-size: 1em;
     z-index: 1;
 }
 .benefits__item:hover .benefits__text {
@@ -573,7 +568,7 @@ body::-webkit-scrollbar-thumb {
 }
 .logo a {
     padding-left: 50px;
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: "albaregular", serif;
     position: relative;
     display: block;
@@ -641,7 +636,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     font-family: "albaregular", serif;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 300;
     border: 2px solid #2e92fd;
     width: 49px;
@@ -673,7 +668,7 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
 }
 .works__main-text {
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 300;
     margin-top: 0;
     padding-top: 20px;
@@ -768,7 +763,7 @@ body::-webkit-scrollbar-thumb {
 }
 .works__description {
     font-weight: 400;
-    font-size: 30px;
+    font-size: 1.8em;
     color: #fffefe;;
     top: 130px;
     left: 0;
@@ -784,7 +779,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25em;
     padding: 5px 0;
     font-weight: 300;
     width: 170px;
@@ -828,7 +823,7 @@ body::-webkit-scrollbar-thumb {
     width: auto;
     margin: 0 auto;
     padding: 15px 0;
-    font-size: 16px;
+    font-size: 1em;
 }
 .technology {
     background-color: #fff;
@@ -868,7 +863,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 5px;
 }
 .technology__content-text p {
-    font-size: 18px;
+    font-size: 1.2em;
     font-weight: 600;
     text-transform: uppercase;
     text-align: left;
@@ -877,7 +872,7 @@ body::-webkit-scrollbar-thumb {
 }
 .technology__content-text span {
     display: block;
-    font-size: 14px;
+    font-size: 0.9em;
 }
 .technology__bar {
     width: 100%;
@@ -966,7 +961,7 @@ body::-webkit-scrollbar-thumb {
     left: 50%;
     transform: translate(-50%, 0%);
     color: #666;
-    font-size: 14px;
+    font-size: 0.9em;
 }
 .page-header__title {
     background: linear-gradient(45deg, #2988b3 25%, #29a3c9 50%, #29c2e1);
@@ -974,7 +969,7 @@ body::-webkit-scrollbar-thumb {
     -webkit-text-fill-color: transparent;
     -webkit-text-fill-color: unset;
     font-weight: 400;
-    font-size: 50px;
+    font-size:  3em;
 }
 .page-header__text span {
     display: inline-block;
@@ -1070,7 +1065,7 @@ body::-webkit-scrollbar-thumb {
     cursor: default;
 }
 .nav__item {
-    font-size: 14px;
+    font-size: 0.9em;
 }
 .works__foto-content {
     cursor: default;
@@ -1101,7 +1096,7 @@ body::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.5);
 }
 .page-header__container p {
-    font-size: 36px;
+    font-size: 2.2em;
     font-family: "albaregular", serif;
     margin-top: 0;
     margin-bottom: 20px;
@@ -1192,7 +1187,7 @@ body::-webkit-scrollbar-thumb {
     height: 15px;
     width: 40px;
     padding: 3px 5px;
-    font-size: 10px;
+    font-size: 0.7em;
     font-weight: bold;
     color: transparent;
     opacity: 0.5;
@@ -1327,7 +1322,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     top: -40px;
     left: 0;
-    font-size: 18px;
+    font-size: 1.2em;
     color: #ded8d8;
     border-bottom: 1px solid #fff;
 }
@@ -1359,7 +1354,7 @@ body::-webkit-scrollbar-thumb {
         z-index: 1;
     }
     .page-header__text {
-        font-size: 19px;
+        font-size: 1.25em;
         margin-top: 10px;
         margin-bottom: 10px;
         line-height: 25px;
@@ -1463,10 +1458,10 @@ body::-webkit-scrollbar-thumb {
         width: 350px;
     }
     .works__link {
-        font-size: 30px;
+        font-size: 1.8em;
     }
     .works__description {
-        font-size: 40px
+        font-size: 2em;
     }
     .works__figure.hover:after,
     .works__figure:hover:after {
