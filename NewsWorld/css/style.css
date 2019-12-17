@@ -873,6 +873,7 @@ header-home .navbar__desktop .navbar__search .search .form-input {
   top: 0;
   right: 0;
   padding: 4px;
+  width: 100%;
   height: 56px;
   color: #000;
   z-index: 999;
@@ -1140,6 +1141,7 @@ header-home .navbar__desktop .navbar__search .search .form-input {
 
 #container-slides {
   position: relative;
+  bottom: 0;
   width: 100%;
   height: 100%;
   min-height: 350px;
@@ -1150,6 +1152,8 @@ header-home .navbar__desktop .navbar__search .search .form-input {
   left: 0;
   top: 0;
   width: 100%;
+  max-width: 1000px;
+  max-height: 692px;
   height: 100%;
   opacity: 0;
   z-index: 1;
@@ -1161,8 +1165,6 @@ header-home .navbar__desktop .navbar__search .search .form-input {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 930px;
-  max-height: 692px;
   color: transparent;
   background-size: cover;
   z-index: 0;
@@ -1171,22 +1173,16 @@ header-home .navbar__desktop .navbar__search .search .form-input {
   z-index: 6;
   background: url(../img/slider/slide-2-930x692.jpg) no-repeat center center;
   background-size: cover;
-  max-width: 930px;
-  max-height: 692px;
 }
 .slide:nth-of-type(3) {
   z-index: 5;
   background: url(../img/slider/slide-3-930x692.jpg) no-repeat center center;
   background-size: cover;
-  max-width: 930px;
-  max-height: 692px;
 }
 .slide:nth-of-type(4) {
   z-index: 4;
   background: url(../img/slider/slide-4-930x692.jpg)no-repeat center center;
   background-size: cover;
-  max-width: 930px;
-  max-height: 692px;
 }
 @keyframes r {
   10% {opacity: 1}
