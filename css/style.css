@@ -1320,7 +1320,7 @@ body::-webkit-scrollbar-thumb {
 }
 .link p {
     position: absolute;
-    top: -40px;
+    top: -10px;
     left: 0;
     font-size: 1.2em;
     color: #ded8d8;
@@ -1519,6 +1519,9 @@ body::-webkit-scrollbar-thumb {
         flex-direction: row;
         top: 50%;
         transform: translate(-50%, -50%);
+    }
+    .link p {
+        top: -40px;
     }
 }
 @media (min-width:992px) {
