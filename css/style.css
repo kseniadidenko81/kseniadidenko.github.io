@@ -1452,7 +1452,7 @@ body::-webkit-scrollbar-thumb {
     }
     .works__foto-content {
         width: 100%;
-        height: 76%;
+        height: 74%;
         border: none;
     }
     .works__text {
@@ -1570,7 +1570,7 @@ body::-webkit-scrollbar-thumb {
     }
     .works__foto-content {
         width: 100%;
-        height: 37%;
+        height: 48%;
         border: none;
     }
     .technology__img {
@@ -1590,6 +1590,9 @@ body::-webkit-scrollbar-thumb {
     }
     .container-menu {
         display: block;
+    }
+    .works__foto-content {
+        height: 48%;
     }
 }
 @media (min-width: 1200px) {
