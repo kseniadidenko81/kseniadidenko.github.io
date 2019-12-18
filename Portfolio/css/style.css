@@ -1592,7 +1592,7 @@ body::-webkit-scrollbar-thumb {
         display: block;
     }
     .works__foto-content {
-        height: 37%;
+        height: 48%;
     }
 }
 @media (min-width: 1200px) {
