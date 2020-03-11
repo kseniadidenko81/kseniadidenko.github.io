@@ -903,6 +903,12 @@ body::-webkit-scrollbar-thumb {
 .technology__progress-6 {
     width: 88%;
 }
+.technology__progress-7 {
+	width: 75%;
+}
+.technology__progress-8 {
+	width: 80%;
+}
 #particles-js {
     height: 100%;
     z-index: 0;
