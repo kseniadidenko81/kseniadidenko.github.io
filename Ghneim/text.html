@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+        <title>Ghneim</title>
+    </head>
+
+    <body>
+
+    <header id="nav" class="">
+        <div class="header-panel-top ">
+            <div class="container">
+                <div class="row">
+                    <div class="size-100 ">
+                        <div class="welcome-message">
+                            <a href="#">При покупке от 5 000 руб доставка по Москве и области бесплатна</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-header">
+            <div class="container">
+                <div class="row">
+                    <div class="size-100 ">
+                        <div class="search-panel">
+                            <div class="row">
+                                <div class="size-25">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            <img src="img/logo.png" alt="ghneim">
+                                        </a>
+                                        <a href="index.html">
+                                            <img class="logo-text" src="img/logo1.png" alt="ghneim">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="size-40">
+                                    <div class='search-box'>
+                                        <form action='/search' class='search-form' method='get' target='_top'>
+                                            <input type="text" id="name" placeholder="Поиск по названию или артикулу...">
+                                            <button class="search-button" type="submit"><svg version="1.1" class="search-icon" x="0px" y="0px" width="30px"
+    height="30px" viewBox="291.001 304.503 30 30" enable-background="new 291.001 304.503 30 30" xml:space="preserve"
+    style="">
+    <path fill="#ffffff" d="M320.542,331.83l-7.246-7.246c3.788-4.882,3.446-11.953-1.035-16.434c-2.353-2.353-5.48-3.648-8.807-3.648
+        c-3.327,0-6.454,1.295-8.806,3.648c-2.353,2.352-3.648,5.48-3.648,8.807c0,3.327,1.295,6.455,3.648,8.807
+        c2.353,2.352,5.48,3.648,8.807,3.648c2.799,0,5.454-0.92,7.629-2.612l7.245,7.245c0.305,0.306,0.706,0.458,1.107,0.458
+        c0.4,0,0.801-0.153,1.107-0.458C321.154,333.433,321.154,332.442,320.542,331.83z M296.863,323.55
+        c-1.761-1.761-2.731-4.102-2.731-6.592c0-2.491,0.97-4.831,2.732-6.593c1.761-1.761,4.102-2.731,6.592-2.731
+        c2.49,0,4.831,0.97,6.593,2.731c3.635,3.634,3.635,9.549,0,13.184c-1.761,1.761-4.103,2.731-6.593,2.731
+        C300.965,326.28,298.624,325.31,296.863,323.55z"></path>
+    </svg><span>Поиск</span></button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="size-33 size-50 size-100">
+                                    <div class="header__links">
+                                        <a href="">
+                                        <span class="icon">
+                                            <use xlink:href="#people">
+                                                <svg id="people" viewBox="0 0 31 32">
+                                                    <title>Войти</title>
+                                                    <path fill="#ffffff" d="M28.673 32h-26.5c-0.3 0-0.596-0.059-0.871-0.174s-0.524-0.283-0.73-0.495c-0.196-0.203-0.348-0.444-0.446-0.706s-0.139-0.541-0.122-0.82c0.112-1.783 0.607-3.31 1.471-4.527 1.118-1.579 2.71-2.45 4.113-3.218 1.326-0.726 2.51-1.394 3.577-2.226 1.788-1.396 1.089-2.281 0.752-2.706-1.586-2.006-2.485-4.077-2.75-6.332-0.25-2.113 0.062-4.363 0.851-6.172 1.276-2.913 3.961-4.599 7.365-4.623h0.164c3.356 0.025 6.098 1.756 7.351 4.628 0.784 1.808 1.093 4.055 0.851 6.165-0.262 2.255-1.154 4.326-2.724 6.33-0.309 0.394-1.031 1.317 0.743 2.715 1.058 0.828 2.229 1.501 3.545 2.226s2.978 1.64 4.080 3.221c0.851 1.218 1.344 2.741 1.456 4.521 0.017 0.279-0.024 0.558-0.122 0.82s-0.249 0.503-0.445 0.707c-0.207 0.212-0.457 0.381-0.733 0.495s-0.574 0.174-0.875 0.172zM2.915 29.241h25.021c-0.106-0.857-0.411-1.679-0.893-2.404-0.736-1.051-1.957-1.724-3.136-2.375-1.371-0.757-2.704-1.517-3.927-2.483-2.411-1.902-2.88-4.406-1.215-6.531 1.252-1.597 1.958-3.222 2.163-4.965 0.19-1.63-0.050-3.418-0.642-4.782-1.101-2.537-3.455-2.932-4.76-2.942h-0.119c-1.308 0.010-3.665 0.406-4.778 2.946-0.597 1.363-0.838 3.148-0.647 4.777 0.204 1.745 0.918 3.368 2.181 4.965 1.683 2.13 1.214 4.636-1.225 6.541-1.234 0.965-2.578 1.721-3.961 2.483-1.191 0.651-2.424 1.325-3.168 2.378-0.482 0.721-0.788 1.539-0.893 2.393z"></path>
+                                                </svg>
+                                            </use>
+                                        </span>
+                                            <span class="icon-text">Войти</span>
+                                        </a>
+                                        <a href="" class="basket">
+                                            <span class="notification_count">3</span>
+                                            <span class="icon">
+                                            <use xlink:href="#heart">
+                                                <svg id="heart" viewBox="0 0 39 32">
+                                                    <title>Избранное</title>
+                                                    <path fill="#ffffff" d="M21.442 31.306l14.945-14.401c0.957-0.918 1.716-2.009 2.232-3.211s0.781-2.49 0.777-3.791c0.004-1.301-0.26-2.589-0.777-3.791s-1.275-2.293-2.232-3.211c-0.952-0.922-2.085-1.654-3.333-2.152s-2.585-0.753-3.936-0.75c-1.351-0.004-2.689 0.251-3.936 0.749s-2.381 1.23-3.333 2.153l-2.151 2.073-2.153-2.073c-1.929-1.855-4.543-2.897-7.269-2.897s-5.34 1.042-7.268 2.897c-0.957 0.918-1.716 2.009-2.233 3.211s-0.78 2.49-0.777 3.791c-0.004 1.301 0.261 2.589 0.777 3.791s1.276 2.293 2.234 3.21l14.948 14.401c0.228 0.22 0.5 0.395 0.799 0.514s0.619 0.18 0.943 0.179c0.323 0.001 0.644-0.060 0.943-0.179s0.571-0.294 0.799-0.515zM10.277 3.332l0.173 0c0.837 0.018 1.663 0.186 2.438 0.493 0.827 0.329 1.58 0.812 2.213 1.422l4.598 4.43 4.597-4.43c0.632-0.611 1.384-1.096 2.211-1.425s1.715-0.497 2.61-0.494h0.002c0.895-0.003 1.782 0.165 2.609 0.495s1.579 0.814 2.211 1.425l0.001 0.001c0.634 0.609 1.137 1.334 1.479 2.131s0.517 1.653 0.513 2.516v0.002c0.003 0.863-0.171 1.718-0.513 2.516s-0.845 1.522-1.479 2.131l-0 0-14.24 13.723-14.245-13.719c-0.634-0.609-1.137-1.333-1.479-2.131s-0.517-1.653-0.514-2.516v-0.002c-0.003-0.863 0.171-1.719 0.513-2.516s0.845-1.522 1.479-2.131l0-0c0.633-0.61 1.385-1.094 2.212-1.423s1.714-0.498 2.609-0.496z"></path>
+                                                </svg>
+                                            </use>
+                                        </span>
+                                            <span class="icon-text">Избранное</span>
+                                        </a>
+                                        <a href="" class="basket tooltip-wrap">
+                                            <span class="notification_count">3</span>
+                                            <span class="icon">
+                                            <use xlink:href="#basket">
+                                                <svg id="basket" viewBox="0 0 32 32">
+                                                    <title>Корзина</title>
+                                                    <path fill="#ffffff" d="M10.012 23.309h18.584c0.365 0.001 0.715 0.152 0.973 0.42s0.404 0.631 0.406 1.010c0 0.381-0.146 0.746-0.405 1.015s-0.611 0.42-0.978 0.42h-19.267c-0.488-0.001-0.958-0.186-1.323-0.522s-0.599-0.799-0.657-1.301c-1.249-10.752-2.578-18.279-2.591-18.357l-0.011-0.076c-0.127-1.056-0.206-2.024-1.253-2.574-0.647-0.337-1.783-0.464-2.13-0.481-0.366-0.018-0.711-0.186-0.958-0.467s-0.376-0.653-0.359-1.033c0.018-0.38 0.181-0.737 0.453-0.993s0.63-0.388 0.996-0.37c0.198 0.010 1.965 0.113 3.25 0.788 1.864 0.979 2.491 2.739 2.744 4.738l0.002 0.012 0 0c0.114 0.673 1.341 7.741 2.524 17.768zM31.541 4.111c0.364 0.332 0.6 0.791 0.662 1.29 0 2.786-0.023 4.436-0.381 6.905-0.372 2.557-0.691 4.373-1.574 7.646-0.161 0.356-0.417 0.658-0.737 0.869s-0.691 0.323-1.071 0.324l-15.648 0.686c-0.367 0-0.719-0.151-0.978-0.42s-0.405-0.634-0.405-1.015c0-0.381 0.146-0.746 0.405-1.015s0.611-0.42 0.978-0.42l15.151-0.686c0.628-2.456 0.805-3.852 1.112-5.968 0.287-1.974 0.333-3.401 0.479-5.842h-18.588c-0.367 0-0.719-0.151-0.978-0.42s-0.405-0.634-0.405-1.015c0-0.381 0.146-0.746 0.405-1.015s0.611-0.42 0.978-0.42h19.277c0.485 0.001 0.953 0.184 1.317 0.517zM11.19 31.873c1.165 0 2.109-0.98 2.109-2.189s-0.944-2.189-2.109-2.189-2.109 0.98-2.109 2.189c0 1.209 0.944 2.189 2.109 2.189zM28.827 29.684c0 1.209-0.944 2.189-2.109 2.189s-2.109-0.98-2.109-2.189c0-1.209 0.944-2.189 2.109-2.189s2.109 0.98 2.109 2.189z"></path>
+                                                </svg>
+                                            </use>
+                                        </span>
+                                            <span class="icon-text">Корзина</span>
+                                            <div class="tooltip arrowed-top">
+                                                <p class="">Товар<span>Шины Bridgestone Ecopia 205/55 R16 91V</span></p>
+                                                <p class="">добавлен в корзину</p>
+                                                <p class="">Ваш заказ: <span class="tooltip-sum">2 товара на сумму 4 880₽</span></p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigation-header">
+            <div class="container">
+                <div class="row">
+                    <div class="size-100 ">
+                        <div class="navbar-navigation">
+                            <div class="size-50 desktop">
+                                <nav role="navigation" class="top-nav">
+                                    <span><a href="#" onclick="openSlideMenu()"><span class='menu-button'></span></a></span>
+                                    <ul class="menu-list menu">
+                                        <li>
+                                            <a href="#">Главная</a>
+                                        </li>
+                                        <li class="desktop-link">
+                                            <a class="active" href="#">Женщинам</a>
+                                            <ul class="dropdown-menu" id="caretDropdownOne">
+                                                <li><a href="">Уход за волосами</a></li>
+                                                <li><a href="">Уход за кожей лица и тела</a></li>
+                                                <li><a href="">Снятие макияжа</a></li>
+                                                <li><a href="">Аромасерия, гигиена и защита</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">Мужчинам</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Детям</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Чай и сладости</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Бренды</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Акции</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="size-33 size-50">
+                                <nav class="main-nav">
+                                    <ul class="navbar-contact main-nav">
+                                        <li>
+                                            <a href="#">Доставка и оплата</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Контакты</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">8 800 582-01-01</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="side-menu" class="slide-nav">
+            <a class="close-nav" href="#" onclick="closeSlideMenu()">X</a>
+            <ul class="submenu-main">
+                <li><a href="">Главная</a></li>
+                <li class="nav-toggle">Женщинам
+                    <nav class="nav-items">
+                        <ul class="submenu">
+                            <li><a href="">Уход за волосами</a></li>
+                            <li><a href="">Уход за кожей лица и тела</a></li>
+                            <li><a href="">Снятие макияжа</a></li>
+                            <li><a href="">Аромасерия, гигиена и защита</a></li>
+                        </ul>
+                    </nav>
+                </li>
+                <li><a href="">Мужчинам</a></li>
+                <li><a href="">Детям</a></li>
+                <li><a href="">Бренды</a></li>
+                <li><a href="">Акции</a></li>
+            </ul>
+
+            <ul>
+                <li class="aside-contact"><a href="">Доставка и оплата</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">8 800 582-01-01</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+        <main>
+            <section class="section-text">
+                <div class="container">
+                    <div class="row">
+                        <div class="size-100">
+
+                            <section id="pattern" class="pattern">
+                                <div class="crumbs-container">
+                                    <ul class="crumbs">
+                                        <li class="breadcrumb-item"><a href="index.html">Женщинам</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page"><a href="#">Уход за волосами</a></li>
+                                    </ul>
+                                </div>
+                            </section>
+
+                            <h1 class="breadcrumb-title">Доставка и оплата</h1>
+                            <div class="main-content">
+                                <aside>
+                                    <div class="text-aside  fixedsticky">
+                                        <h3>Доставка и оплата</h3>
+                                        <div class="payment-wrap">
+                                            <ul class="payment-menu">
+                                                <li><a href="">Как сделать заказ</a></li>
+                                                <li><a href="">О компании</a></li>
+                                                <li><a href="">Контакты</a></li>
+                                                <li><a href="">Вопрос-ответ</a></li>
+                                                <li><a href="">Условия работы</a></li>
+                                                <li><a href="">Акции</a></li>
+                                                <li><a href="">Блог</a></li>
+                                            </ul>
+                                            <a href="" class="banner-aside">
+                                                <img src="img/image/sidephoto.png" alt="">
+                                            </a>
+                                        </div>
+                                     </div>
+                                </aside>
+                                <section class="content-wrap content-text">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="size-100">
+                                                <section class="section-padding">
+                                                    <h3 class="title-text-block">Интернет-магазин ghneim.ru предлагает несколько вариантов доставки:</h3>
+                                                    <ul class="list-deliver">
+                                                        <li>курьерская;</li>
+                                                        <li>самовывоз из Пункта выдачи заказов;</li>
+                                                        <li>самовывоз из магазина г. Москва, м. Румянцево;</li>
+                                                        <li>почта России.</li>
+                                                    </ul>
+                                                </section>
+                                                <section class="section-padding">
+                                                    <h3 class="title-text-block">Курьерская доставка*</h3>
+                                                    <p>Вы можете заказать доставку товара с помощью курьера, который прибудет по указанному адресу в будние дни или в субботу с 10.00 до 22.00. Интервал доставки Вы можете выбрать при оформлении заказа:
+                                                        <br> 10.00 - 15.00, 12.00 - 15.00, 15.00 - 18.00, 17.00 - 20.00, 19.00 - 22.00.</p>
+                                                    <p> Вы вскрываете упаковку при курьере, осматриваете на целостность и соответствие указанной комплектации.
+                                                        Время осмотра и проверки качества товара ограничено 15 минутами. После вы можете отказаться частично или полностью от покупки.
+                                                        <br>Доставка по Москве и Санкт-Петербургу бесплатна при заказе от 3000 рублей.
+                                                        <br>При заказе на сумму менее 3000 рублей стоимость доставки - 100 рублей.</p>
+                                                </section>
+                                                <section class="section-padding">
+                                                    <h3 class="title-text-block">Самовывоз из магазина</h3>
+                                                    <p>Самовывоз из магазина "Ghneim" в БП "Румянцево" - бесплатно.
+                                                        <br>Выход станции метро "Румянцево" находится на территории Бизнес Парка "Румянцево". Магазин ""Ghneim" " в корпусе А, вход №1, первый павильон слева. Ориентир - магазин "Перекресток". Вы просто идёте в этот магазин, обращаетесь к сотруднику в кассовой зоне и называете номер заказа. Забрать покупку может ваш друг или родственник, который знает номер и имя, на кого он оформлен.
+                                                        <br>Смотреть карту</p>
+                                                </section>
+                                                <section class="section-padding">
+                                                    <h3 class="title-text-block">Пункты выдачи</h3>
+                                                    <p>Пункты выдачи заказов – это партнерский Пункт выдачи заказов с живым обслуживанием, или терминал с автоматизированной системой для хранения заказанных товаров. Удобство в том, что человек может забрать заказ в любое удобное время.
+                                                        <br>Доставка до ПВЗ по Москве и Санкт-Петербургу бесплатна при заказе от 1500 рублей.
+                                                        <br>При заказе на сумму менее 1500 рублей стоимость доставки - 100 рублей.
+                                                        <br>Доставка до ПВЗ по другим регионам России бесплатна при заказе от 3000 рублей.
+                                                        <br>Стоимость доставки заказов в регионы России на сумму менее 3000 рублей вы увидите при оформлении заказа или можете уточнить
+                                                        у менеджера.</p>
+                                                    <img class="map" src="img/image/map.jpg" alt="">
+                                                </section>
+                                                <section class="section-padding">
+                                                    <h3 class="title-text-block">Как работать с ПВЗ:</h3>
+                                                    <ul class="list-deliver">
+                                                        <li>в момент оформления заказа на сайте, вы выбираете удобный для себя ПВЗ, если такая система работает в вашем городе;</li>
+                                                        <li>на ваш телефон или e-mail придет уникальный код, это значит, что товар доставлен в Пункт выдачи;</li>
+                                                        <li>вы приходите в ПВЗ или к постамату, сообщаете номер или вводите полученный код и следуете инструкциям автомата;</li>
+                                                        <li>оплачиваете заказ в кассиру или в терминале постамата;</li>
+                                                        <li>забираете товар.</li>
+                                                    </ul>
+                                                    <p>Срок хранения заказа в ПВЗ или постамате 7 дней, но его можно продлить ещё на аналогичный срок. Ч
+                                                        тобы уточнить информацию и продлить время хранения позвоните нашим менеджерам, сообщите номер заказа или телефон и
+                                                        Вас подробно проконсультируют и окажут необходимую помощь.</p>
+                                                </section>
+                                                <section class="section-padding">
+                                                    <h3 class="title-text-block">Почтовая доставка</h3>
+                                                    <p>Если в вашем городе не действует курьерская служба, нет ПВЗ и постаматов, то вы можете заказать доставку через почту России.
+                                                        Сразу по прибытии товара, на ваш адрес придет извещение о посылке.
+                                                        <br>Внимание!!! Срок хранения посылки 15 дней. Просьба своевременно забирать Ваши заказы из отделений Почты России.
+                                                        <br>Перед оплатой вы можете оценить состояние коробки (не вскрывая): вес, целостность. Если вам кажется, что заказ
+                                                        не соответствует параметрам или коробка повреждена, попросите сотрудника почты составить акт о вскрытии.
+                                                        Вскрывать коробку самостоятельно вы можете только после того, как оплатили заказ.
+                                                        <br>Доставка Почтой России бесплатна при заказе от 3000 рублей.
+                                                        <br>Стоимость доставки заказов Почтой России на сумму менее 3000 рублей вы увидите при оформлении заказа или
+                                                        можете уточнить у менеджера.</p>
+                                                </section>
+                                                <section class="section-padding">
+                                                    <h3 class="title-text-block">Срок доставки</h3>
+                                                    <p class="post-table-p">В зависимости от вашего региона проживания, доставка занимает разное время.</p>
+                                                    <div class="wrap-table">
+                                                        <table class="responsive-table">
+                                                            <thead>
+                                                            <tr>
+                                                                <th scope="col">Регион</th>
+                                                                <th scope="col">Курьерская доставка</th>
+                                                                <th scope="col">Самовывоз из магазина</th>
+                                                                <th scope="col">Пункты выдачи</th>
+                                                                <th scope="col">Почта России</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <th scope="row">Московская область, Ленинградская область</th>
+                                                                <td colspan="3" align="center">1-3 рабочих дня</td>
+                                                                <td data-title="Domestic Gross" data-type="currency">5 дней</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <th scope="row">Урал и Поволжье</th>
+                                                                <td data-title="Studio">5-7 рабочих дней</td>
+                                                                <td data-title="Worldwide Gross" data-type="currency"></td>
+                                                                <td data-title="Domestic Gross" data-type="currency">5-7 рабочих дней</td>
+                                                                <td data-title="Domestic Gross" data-type="currency">14 дней</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <th scope="row">Сибирь</th>
+                                                                <td data-title="Studio">7-10 рабочих дней</td>
+                                                                <td data-title="Domestic Gross" data-type="currency"></td>
+                                                                <td data-title="Domestic Gross" data-type="currency">7-10 рабочих дней</td>
+                                                                <td data-title="Domestic Gross" data-type="currency">14-21 день</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <section class="blog-information blog-popular">
+                                <div class="container">
+                                    <div class="row">
+                                        <h3>Популярное</h3>
+                                        <div class="marker">
+                                            <ul class="tags">
+                                                <li class="tag-item"><a href="#">Натуральная крымская косметика</a></li>
+                                                <li class="tag-item"><a href="#">Крымская косметика крема</a></li>
+                                                <li class="tag-item"><a href="#">Косметика +с улиткой</a></li>
+                                            </ul>
+                                            <ul class="tags">
+                                                <li class="tag-item"><a href="#">Шампунь безсульфатный</a></li>
+                                                <li class="tag-item"><a href="#">Шампунь натуральный</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="blog-item-slider">
+                                <div class="slider slider4">
+                                    <h3 class="title">Вы недавно смотрели</h3>
+                                    <div class="switch">
+                                        <div class="border-arrow-left">
+                                            <div class="arrows prev slider__control slider__control_left"></div>
+                                        </div>
+                                        <div class="border-arrow-right">
+                                            <div class="arrows next slider__control slider__control_right"></div>
+                                        </div>
+                                    </div>
+                                    <div class="slider__wrapper">
+                                        <div class="slider__item slider-product-item">
+                                            <div class="product-item">
+                                                <div class="img-product">
+                                                    <a href="product-details.html">
+                                                        <img src="img/image/mini-item3.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="product-content">
+                                                    <div class="text-product">Гоммаж для лица "Деликатное очищение"</div>
+
+                                                    <div class="price-box">
+                                                        <span class="price-regular">370 ₽</span>
+                                                        <span class="price-old"><del>370 ₽</del></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item slider-product-item">
+                                            <div class="product-item">
+                                                <div class="img-product">
+
+                                                    <a href="product-details.html">
+                                                        <img src="img/image/mini-item4.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="product-content">
+                                                    <div class="text-product">Гоммаж для лица "Деликатное очищение"</div>
+
+                                                    <div class="price-box">
+                                                        <span class="price-regular">370 ₽</span>
+                                                        <span class="price-old"><del>370 ₽</del></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item slider-product-item">
+                                            <div class="product-item">
+                                                <div class="img-product">
+
+                                                    <a href="product-details.html">
+                                                        <img src="img/image/mini-item3.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="product-content">
+                                                    <div class="text-product">Гоммаж для лица "Деликатное очищение"</div>
+
+                                                    <div class="price-box">
+                                                        <span class="price-regular">370 ₽</span>
+                                                        <span class="price-old"><del>370 ₽</del></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item slider-product-item">
+                                            <div class="product-item">
+                                                <div class="img-product">
+
+                                                    <a href="product-details.html">
+                                                        <img src="img/image/mini-item4.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="product-content">
+                                                    <div class="text-product">Гоммаж для лица "Деликатное очищение"</div>
+
+                                                    <div class="price-box">
+                                                        <span class="price-regular">370 ₽</span>
+                                                        <span class="price-old"><del>370 ₽</del></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item slider-product-item">
+                                            <div class="product-item">
+                                                <div class="img-product">
+
+                                                    <a href="product-details.html">
+                                                        <img src="img/image/mini-item3.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="product-content">
+                                                    <div class="text-product">Гоммаж для лица "Деликатное очищение"</div>
+
+                                                    <div class="price-box">
+                                                        <span class="price-regular">370 ₽</span>
+                                                        <span class="price-old"><del>370 ₽</del></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="slider__item slider-product-item">
+                                            <div class="product-item">
+                                                <div class="img-product">
+
+                                                    <a href="product-details.html">
+                                                        <img src="img/image/mini-item4.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <a href="#" class="product-content">
+                                                    <div class="text-product">Гоммаж для лица "Деликатное очищение"</div>
+
+                                                    <div class="price-box">
+                                                        <span class="price-regular">370 ₽</span>
+                                                        <span class="price-old"><del>370 ₽</del></span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <footer id="footer" class="footer">
+        <div class="container footer-wrapper">
+            <div class="row">
+                <div class="man-woman">
+                    <div class="widget-item">
+                        <h4 class="widget-title">Женщинам</h4>
+                        <div class="widget-body">
+                            <ul class="location-wrap">
+                                <li><a href="#">Уход за волосами </a></li>
+                                <li><a href="#">Уход за кожей лица и тела</a></li>
+                                <li><a href="#">Снятие макияжа</a></li>
+                                <li><a href="#">Аромасерии, гигиена и защита</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="two-block">
+                        <h4 class="widget-title">Мужчинам</h4>
+                        <div class="widget-body">
+                            <ul class="useful-link">
+                                <li><a href="#">Серия X-stream</a></li>
+                                <li><a href="#">Гели при повреждении кожных покровов</a></li>
+                                <li><a href="#">Средства для массажа</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="child">
+                    <div class="widget-item">
+                        <h4 class="widget-title">Детям</h4>
+                        <div class="widget-body">
+                            <ul class="useful-link">
+                                <li><a href="#">Амадина-для маленьких модниц</a></li>
+                                <li><a href="#">Сашенька-косметика для малышей</a></li>
+                                <li><a href="#"> UNIX - для юной кожи (14-18лет)</a></li>
+                                <li><a href="#">Серия детской косметики Рики-Тики</a></li>
+                                <li><a href="#">Присыпки с эфирными маслами</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client">
+                    <div class="widget-item">
+                        <h4 class="widget-title">Клиентам</h4>
+                        <div class="widget-body">
+                            <ul class="useful-link">
+                                <li><a href="#">Акции</a></li>
+                                <li><a href="#">Скидки</a></li>
+                                <li><a href="#">Как сделать заказ</a></li>
+                                <li><a href="#">Способы оплаты</a></li>
+                                <li><a href="#">Условия доставки</a></li>
+                                <li><a href="#">Условия работы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company">
+                    <div class="widget-item">
+                        <h4 class="widget-title">Компания</h4>
+                        <div class="widget-body">
+                            <ul class="useful-link">
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Магазины</a></li>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="adress ">
+                    <div class="section-padding">
+                        <div class="widget-item widget-block">
+                            <div class="section-col">
+                                <span class="tel">8(800) 204-72-72</span>
+                                <a>Заказать звонок</a>
+                                <p class="addr">ООО “GhNeim” <br> Москва, ул. Гурзуфская, д. 47Б, офис 120 <br> <a href="mailto:info@ghneim.ru">info@ghneim.ru</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <div class="section-payment">
+                        <div class="card-item">
+                            <img src="img/icon/pay-card.png" alt="Оплата">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="size-100">
+                    <div class="copyright-text">
+                        <div>Copyright © 2020 Ghneim. Все права защищены</div>
+                        <div>Создание сайта MondayStudio</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/script.js"></script>
+
+        <!--CRUMB-->
+        <script>
+            (function(w){
+            var $crumbsContainer = $('.crumbs-container');
+            $(document).ready(function() {
+            buildCrumbs();
+            });
+
+            function buildCrumbs() {
+            $('<a href="#" id="crumbs-trigger">+</a>').appendTo($crumbsContainer);
+
+            $('#crumbs-trigger').bind('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            $crumbsContainer.toggleClass('active');
+
+            if($crumbsContainer.hasClass('active')) {
+            $this.text('-');
+            } else {
+            $this.text('+');
+            }
+            });
+
+            }
+
+
+            })(this);
+        </script>
+
+    </body>
+
+</html>
