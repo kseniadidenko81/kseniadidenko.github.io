@@ -1323,6 +1323,7 @@ body::-webkit-scrollbar-thumb {
         color: #fffefe;;
         margin: 0 auto;
         padding: 15px 0;
+	display: none;
     }
     .works__monitor {
         display: block;
@@ -1427,10 +1428,8 @@ body::-webkit-scrollbar-thumb {
     .benefits__item {
         max-width: 45%;
     }
-    .works__foto-content {
-        width: 100%;
-        height: 48%;
-        border: none;
+    .works__text {
+	display: block;
     }
     .technology__img {
         display: block;
