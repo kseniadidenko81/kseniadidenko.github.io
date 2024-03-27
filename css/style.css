@@ -663,11 +663,31 @@ body::-webkit-scrollbar-thumb {
     color: #fffefe;;
 }
 .works__container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
 }
-.works__main-text {
+.works__img {
+    position: relative;
+    overflow: hidden;
+}
+.works__img:hover:after {
+    width: 100%;
+    left: 0%;
+    height: 55%;
+    top: 0%;
+    background-color: #222;
+    border: 2px solid #000;
+    position: absolute;
+    content: '';
+    opacity: .9;
+    transform: skew(-15deg) scaleX(.7);
+    transition: all 500ms cubic-bezier(.175, .885, .32, 1.275);
+    transition: ease 0.4s;
+    z-index: 0;
+}
+/* .works__main-text {
     font-size: 1.25em;
     font-weight: 300;
     margin-top: 0;
@@ -755,20 +775,22 @@ body::-webkit-scrollbar-thumb {
 .works__smart {
     width: 100%;
     height: 100%;
-}
+} */
 .works__figcaption-content {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -140%);
+    opacity: 0;
+    z-index: 4;
+}
+.works__img:hover .works__figcaption-content {
+    opacity: 1;
 }
 .works__description {
-    font-weight: 400;
-    font-size: 1.8em;
-    color: #fffefe;;
-    top: 130px;
-    left: 0;
-    right: 0;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fffefe;
 }
 .works__link,
 .works__link:hover {
@@ -780,9 +802,9 @@ body::-webkit-scrollbar-thumb {
     margin: 0 auto;
     text-decoration: none;
     text-align: center;
-    font-size: 1.25em;
+    font-size: 16px;
     padding: 5px 0;
-    font-weight: 300;
+    font-weight: 600;
     width: 170px;
     color: #222;
 }
@@ -791,7 +813,7 @@ body::-webkit-scrollbar-thumb {
     color: #2e92fd;
     width: 190px
 }
-.works__monitor {
+/* .works__monitor {
     position: relative;
     width: 100%;
     height: auto;
@@ -807,8 +829,8 @@ body::-webkit-scrollbar-thumb {
     bottom: 0;
     z-index: 5;
     right: -5px;
-}
-.works__smartphone .works__foto-content {
+} */
+/* .works__smartphone .works__foto-content {
     height: 238px;
     width: 126px;
     margin-left: 9px;
@@ -817,7 +839,7 @@ body::-webkit-scrollbar-thumb {
 .works__smartphone .works__figure {
     margin: 16px 0 0;
     overflow: hidden;
-}
+} */
 .works__text {
     font-weight: 400;
     color: #fffefe;;
@@ -988,9 +1010,9 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-.works__figure figcaption span {
+/* .works__figure figcaption span {
     display: block;
-}
+} */
 .page-header__scroll svg {
     animation: none;
 }
@@ -1031,13 +1053,13 @@ body::-webkit-scrollbar-thumb {
     }
 }
 .works__text:first-of-type {
-    padding-top: 15px;
+    padding-top: 8px;
 }
-.works__text {
+/* .works__text {
     padding-top: 0;
     padding-bottom: 20px;
-}
-.works__figure.hover:after,
+} */
+/* .works__figure.hover:after,
 .works__figure:hover:after {
     transform: skewX(0);
     transition: ease 0.4s;
@@ -1055,7 +1077,7 @@ body::-webkit-scrollbar-thumb {
     top: 46.5%;
     background-color: #222;
     transform: translate(-100%, -50%);
-}
+} */
 .works__link {
     color: #2e92fd;
     border: 1px solid #2e92fd;
@@ -1065,18 +1087,18 @@ body::-webkit-scrollbar-thumb {
     background-color: #2e92fd;
     border: 1px solid #2e92fd;
 }
-.works__figcaption {
+/* .works__figcaption {
     cursor: default;
-}
-.works__smartphone .works__foto-content {
+} */
+/* .works__smartphone .works__foto-content {
     cursor: default;
-}
+} */
 .nav__item {
     font-size: 0.9em;
 }
-.works__foto-content {
+/* .works__foto-content {
     cursor: default;
-}
+} */
 .page-header__wrapper {
     background-image: url("../img/bg.jpg");
     background-attachment: fixed;
@@ -1161,9 +1183,9 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: 100%;
 }
-.works__text {
+/* .works__text {
     font-weight: 300;
-}
+} */
 @keyframes move {
     25% {
         opacity: 1;
@@ -1468,7 +1490,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 1.8em;
     }
     .works__description {
-        font-size: 2em;
+        font-size: 22px;
     }
     .works__figure.hover:after,
     .works__figure:hover:after {
