@@ -687,6 +687,7 @@ body::-webkit-scrollbar-thumb {
     transition: ease 0.4s;
     z-index: 0;
 }
+
 .works__img-text {
     display: flex; 
     flex-direction: column; 
@@ -707,6 +708,10 @@ body::-webkit-scrollbar-thumb {
     border: 2px solid #000;
     padding: 24px;
     max-width: 500px;
+}
+
+.works__img-text .works__link:focus {
+    color: #2e92fd;
 }
 
 .works__figcaption-content {
