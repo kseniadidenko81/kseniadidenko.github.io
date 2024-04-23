@@ -687,13 +687,13 @@ body::-webkit-scrollbar-thumb {
     transition: ease 0.4s;
     z-index: 0;
 }
-works__img-text {
+.works__img-text {
     display: flex; 
     flex-direction: column; 
     align-items: center;
 }
 
-works__img-text works__figcaption-content {
+.works__img-text .works__figcaption-content {
     content: '';
     opacity: 1;
     transform: skew(-15deg);
