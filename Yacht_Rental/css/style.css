@@ -1,0 +1,297 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #666;
+}
+
+p a {
+	color: #FF6;
+}
+
+p a:hover {
+	color: #9FF;
+}
+
+#about p a { color: #066; }
+#about p a:hover { color: #F36; }
+
+#contact p a { color: #066; }
+
+footer span a { color: #FFF; }
+
+.logo-font {
+    font-family: 'Oswald', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+.parallax-window {
+    min-height: 1064px;
+    background: transparent;
+}
+
+.text-yellow {
+    color: #FC6;
+}
+
+.text-gold {
+    color: #CC9966;
+}
+
+.text-brown {
+    color: #544639;
+}
+
+.text-green {
+    color: #006666;
+}
+
+a.bg-green:hover {
+    background-color: #0a8585;
+}
+
+.bg-brown {
+    background-color: #544639;
+}
+
+.bg-green {
+    background-color: #006666;
+}
+
+.border-gold {
+    border-color: #CC9966;
+}
+
+.intro-width {
+    max-width: 1200px;
+}
+
+.input:focus {
+    outline: none !important;
+    border:1px solid #CC9966;
+    box-shadow: 0 0 10px #b67533;
+}
+
+input::placeholder,
+textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(214, 212, 212);
+    opacity: 1; /* Firefox */
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(214, 212, 212);
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(214, 212, 212);
+}
+
+#nav {
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+#nav.scroll {
+    background-color: rgba(0,0,0,0.7);
+}
+
+#nav li a {
+    border-bottom-color: transparent;
+    transition: all 0.3s ease;
+}
+
+#nav li a.current,
+#nav li a:hover {
+    border-bottom: 2px solid #CC9966;
+}
+
+.text-2xl {
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.cross-line {
+    display: flex;
+    white-space: nowrap;
+    margin: auto;
+    max-width: 420px;
+    width: 100%;
+}
+
+.cross-line::before, .cross-line::after {
+    border-top: 2px solid #CC9966;
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 15px;
+    width: 50%;
+}
+
+.cross-line > span {
+    padding: 0 15px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.menu-item {
+    display: grid;
+    gap: 24px;
+}
+
+.copyright-link {
+    color: #CC9966;
+}
+
+.brand-name img {
+    width: 75px;
+    margin-top: -8px;
+}
+
+@media (min-width: 768px) {
+    #nav.scroll .container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    #nav {
+        width: 100%;
+        right: 0;
+        border-radius: 5px;
+    }
+
+    .logo {
+        margin-top: 12px;
+    }
+
+    .brand-name img {
+        width: 45px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 639px) {
+    .parallax-window {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 370px) {
+    .menu-item {
+        flex-direction: column;
+    }
+
+    .menu-item-2 {
+        flex-direction: column-reverse;
+    }
+
+    .menu-item img {
+        margin-bottom: 10px;
+    }
+
+    .menu-item-2 img {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Pages-In Section */
+.img-bg-hr {
+    background-size: cover;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    width: 100%;
+    animation: horizontalMove 45s infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes horizontalMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 20%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+#main-img, #thumbnails img {
+    box-shadow: 2px 2px 10px 5px #b8b8b8;
+    border-radius: 10px;
+}
+
+* {
+    transition: all 0.5s ease;
+}
+
+#thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+#thumbnails img {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#main-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+}
+
+.img-bg-section {
+    background: linear-gradient(to top, #0b8be9 0%, #28cef1 47%, #7ed367 100%)
+    fixed;
+    position: relative;
+}
+
+.img-bg-section:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: -6px;
+    height: 40px;
+    background: linear-gradient(to top, #0b8be9 0%, #28cef1 47%, #7ed367 100%)
+    fixed;
+    filter: blur(4px);
+}
+
+@media only screen and (max-width: 480px) {
+    #thumbnails img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #main-img {
+        width: 100%;
+    }
+}
+
+#thumbnails img:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    opacity: 0;
+}
+
+@media only screen and (max-width: 1023px) {
+    .order-text {
+        order: 2;
+    }
+}
