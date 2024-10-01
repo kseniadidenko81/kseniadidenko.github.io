@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- Intro section -->
+    <header id="intro" class="section-intro relative w-full h-full">
+      <div class="absolute w-full">
+        <img
+          src="img/main-img-1.jpg"
+          alt="Background Image"
+          class="object-cover object-center w-full h-full"
+        />
+      </div>
+      <div class="intro-text absolute w-full flex items-center justify-center">
+        <div class="mb-4 md:mb-0">
+          <div class="sketo-logo w-full pb-14">
+            <a id="sketo-logo" href="#intro">
+              <img
+                src="img/logo_sketo.png"
+                width="120"
+                height="52"
+                aria-hidden="true"
+                alt="sketo-logo"
+              />
+            </a>
+          </div>
+          <h1
+            class="text-white text-4xl md:text-5xl mb-2 text-center text-shadows"
+          >
+            Приєднуйтесь до подорожі під вітрилами!
+          </h1>
+          <div class="text-center intro-text-link">
+            <div class="inline-block">
+              <a
+                href="#contact"
+                class="contact flex justify-center items-center text-3xl transition text-white text-shadows"
+              >
+                <span>Почніть планувати відпустку</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="chevron-scroll">
+            <div class="chevron-content">
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+              <div class="chevron"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Intro section -->
+
+    <!-- Navigation -->
+    <nav
+      id="nav"
+      class="main-block bg-white w-full scroll flex justify-center relative"
+    >
+      <div class="container mx-auto px-2 md:py-5 flex items-center justify-end">
+        <div class="sketo-logo w-full flex items-center absolute">
+          <a id="sketo-logo-nav" href="#intro">
+            <img
+              src="img/logo_sketo_b.png"
+              width="120"
+              height="52"
+              aria-hidden="true"
+              alt="sketo-logo"
+            />
+          </a>
+        </div>
+        <button class="md:hidden py-2 px-2" id="menu-toggle">
+          <i class="fas fa-2x fa-bars text-black"></i>
+        </button>
+        <ul class="text-md font-semibold flex justify-end flex-col md:flex-row">
+          <li class="inline-block py-2">
+            <a href="#intro" class="py-1 md:py-2 px-2">Головна</a>
+          </li>
+          <li class="inline-block py-2">
+            <a href="#yacht" class="py-1 md:py-2 px-2">Наш флот</a>
+          </li>
+          <li class="inline-block py-2">
+            <a href="#contact" class="py-1 md:py-2 px-2">Контакти</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Section Yacht -->
+    <section
+      id="yacht"
+      class="parallax"
+      style="background-image: url('img/main-img-2.jpg')"
+    >
+      <div class="flex flex-col py-24 sm:py-48">
+        <div class="text-center mb-10">
+          <h2
+            class="text-3xl font-medium inline-block text-center text-shadows"
+          >
+            <span>Наш флот</span>
+          </h2>
+        </div>
+        <div class="flex flex-col md:flex-row items-center w-full">
+          <div class="card flex-1 m-5 rounded-xl item-container">
+            <a href="page-lagoon-42_Mio.html">
+              <div class="flex flex-col items-center mt-6 menu-item relative">
+                <img src="img/Mio.png" alt="Lagoon-42" class="rounded-md" />
+                <h3
+                  class="z-10 text-white absolute bottom-0 py-2 text-md w-full text-center uppercase text-shadows"
+                >
+                  Lagoon - 42
+                </h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="card flex-1 m-5 rounded-xl item-container">
+            <a href="page-lagoon-450s_Salty-love.html">
+              <div class="flex flex-col items-center mt-6 menu-item relative">
+                <img
+                  src="img/SaltyLove.png"
+                  alt="Lagoon-450s"
+                  class="rounded-md"
+                />
+                <h3
+                  class="z-10 text-white absolute bottom-0 py-2 text-md w-full text-center uppercase text-shadows"
+                >
+                  Lagoon - 450s
+                </h3>
+              </div>
+            </a>
+          </div>
+
+          <div class="card flex-1 m-5 rounded-xl item-container">
+            <a href="page-lagoon_Saga.html">
+              <div class="flex flex-col items-center mt-6 menu-item relative">
+                <img src="img/Saga.png" alt="Lagoon-620" class="rounded-md" />
+                <h3
+                  class="z-10 text-white absolute bottom-0 py-2 text-md w-full text-center uppercase text-shadows"
+                >
+                  Lagoon - 620
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Section Yacht -->
+
+    <!-- Section Contact + Footer -->
+    <section
+      id="contact"
+      class="parallax"
+      style="background-image: url('img/main-img-3.jpg')"
+    >
+      <div class="container mx-auto container py-24 sm:py-48">
+        <div class="flex flex-col md:flex-row justify-around lg:items-stretch">
+          <div
+            class="flex-1 rounded-xl p-6 p-8 m-5 bg-white bg-opacity-80 item-container"
+          >
+            <h2 class="text-2xl mb-6 text-blue">Зв'яжіться з нами</h2>
+            <p class="mb-6 text-md">
+              Не соромтеся зв’язуватися з нами безпосередньо по телефону або
+              чату. Ми тут, щоб допомогти відповісти на будь-які ваші запитання.
+            </p>
+            <p class="mb-10 text-md">
+              <span class="block mb-2"
+                >Tel:
+                <a
+                  href="tel:+306988113000"
+                  class="transition text-blue font-semibold"
+                  >+306988113000</a
+                ></span
+              >
+            </p>
+            <p class="mb-10 text-md">
+              <span class="block mb-2"
+                >Месенджер:
+                <a
+                  href="https://api.whatsapp.com/send/?phone=306988113000&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  class="transition text-blue font-semibold"
+                  >whatsapp</a
+                ></span
+              >
+            </p>
+            <p class="mb-10 text-md">
+              <span class="block mb-2"
+                >Youtube:
+                <a
+                  href="https://www.youtube.com/@yacht_camp"
+                  target="_blank"
+                  class="transition text-blue font-semibold"
+                  >@yacht_camp</a
+                ></span
+              >
+            </p>
+          </div>
+          <div class="flex-1 rounded-xl p-6 p-8 m-5 bg-block item-container">
+            <form action="#" method="post" class="text-md">
+              <input
+                type="text"
+                name="name"
+                class="input w-full bg-black border-b bg-opacity-0 text-white px-2 py-4 mb-4 border-white"
+                placeholder="Ім'я"
+                required=""
+              />
+              <input
+                type="email"
+                name="email"
+                class="input w-full bg-black border-b bg-opacity-0 text-white px-2 py-4 mb-4 border-white"
+                placeholder="Email"
+                required=""
+              />
+              <textarea
+                rows="6"
+                name="message"
+                class="input w-full bg-black border-b bg-opacity-0 text-white px-2 py-4 mb-4 border-white"
+                placeholder="Повідомлення..."
+                required=""
+              ></textarea>
+              <div class="text-right">
+                <button
+                  type="submit"
+                  class="text-white font-semibold transition text-shadows"
+                >
+                  <span>Відправити</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="flex item-center justify-center logo-footer">
+          <img
+            src="img/union-logo-1.png"
+            width="75"
+            height="68"
+            aria-hidden="true"
+            alt="Union-logo"
+            class="w-full"
+          />
+        </div>
+        <!-- End Contact Form section -->
+      </div>
+      <!-- Footer -->
+      <footer class="relative bottom-0 left-0 w-full">
+        <div class="text-white py-4 text-center">
+          <span class="copyright"
+            >@ Copyright
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            <a class="text-blue font-semibold" href="#intro" target="_blank"
+              >Union Yachting</a
+            >
+          </span>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    </section>
+    <!-- End Section Contact _ Footer -->
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
