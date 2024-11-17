@@ -18,7 +18,7 @@
 
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
-        <link
+    <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin="anonymous"
@@ -82,6 +82,8 @@
     />
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <link rel="preload" href="img/home/main-img_desc-min.webp" as="image" />
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/main.css" />
@@ -288,7 +290,13 @@
                     srcset="img/home/main-img_desc-min.webp"
                     media="(min-width: 520px)"
                   />
-                  <img src="img/home/main-img_desc-min.webp" alt="main image" />
+                  <img
+                    src="img/home/main-img_desc-min.webp"
+                    alt="main image"
+                    width="540"
+                    height="756"
+                    loading="eager"
+                  />
                 </picture>
               </div>
             </div>
