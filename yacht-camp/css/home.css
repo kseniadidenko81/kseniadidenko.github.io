@@ -823,6 +823,7 @@ nav .addittional-btn {
   border-radius: 12px;
   max-height: 480px;
   object-fit: cover;
+  display: block;
 }
 
 .content-section {
