@@ -81,9 +81,9 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-
     <link rel="preload" href="img/home/main-img_desc-min.webp" as="image" />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/main.css" />
@@ -286,13 +286,14 @@
             <div class="col-lg-6">
               <div class="picture-container">
                 <picture>
-                  <source
-                    srcset="img/home/main-img_desc-min.webp"
-                    media="(min-width: 520px)"
-                  />
                   <img
                     src="img/home/main-img_desc-min.webp"
-                    alt="main image"
+                    srcset="
+                      img/home/main-img_desc-min.webp  768w,
+                      img/home/main-img_desc-min.webp 1200w
+                    "
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                    alt="courses image"
                     width="540"
                     height="756"
                     loading="eager"
@@ -396,14 +397,18 @@
         </div>
         <div class="picture-container">
           <picture>
-            <source
-              srcset="img/home/about-img_desc-min.webp"
-              media="(min-width: 520px)"
-            />
             <img
-              class="pt-4 pt-md-5"
               src="img/home/about-img_desc-min.webp"
+              srcset="
+                img/home/about-img_desc-min.webp  768w,
+                img/home/about-img_desc-min.webp 1200w
+              "
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
               alt="about image"
+              width="1280"
+              height="703"
+              loading="lazy"
+              class="pt-4 pt-md-5"
             />
           </picture>
         </div>
@@ -508,7 +513,6 @@
                 <div class="grid-section">
                   <div class="text-start grid-item order-2 order-lg-0">
                     <h6 class="text-uppercase">Viktor Kharchevskyi</h6>
-                    <!-- <p class="fw-bold">Co-founder</p> -->
                     <div class="block-item-text pt-3 position-relative">
                       <div class="read-more-wrap">
                         <p>
@@ -535,11 +539,21 @@
                     </div>
                   </div>
                   <div class="d-flex flex-img">
-                    <img
-                      class="radius-img"
-                      src="img/home/instructors-1_desc.webp"
-                      alt="instructor image"
-                    />
+                    <picture>
+                      <img
+                        src="img/home/instructors-1_desc.webp"
+                        srcset="
+                          img/home/instructors-1_desc.webp  768w,
+                          img/home/instructors-1_desc.webp 1200w
+                        "
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                        alt="instructor image"
+                        width="418"
+                        height="536"
+                        loading="lazy"
+                        class="radius-img"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -548,7 +562,6 @@
                 <div class="grid-section">
                   <div class="text-start grid-item order-2 order-lg-0">
                     <h6 class="text-uppercase">IGOR AKIMENKO</h6>
-                    <!-- <p class="fw-bold">Co-founder</p> -->
                     <div class="block-item-text pt-3 position-relative">
                       <div class="read-more-wrap">
                         <p>
@@ -575,11 +588,21 @@
                     </div>
                   </div>
                   <div class="d-flex flex-img">
-                    <img
-                      class="radius-img"
-                      src="img/home/instructors-1_desc.webp"
-                      alt="instructor image"
-                    />
+                    <picture>
+                      <img
+                        src="img/home/instructors-1_desc.webp"
+                        srcset="
+                          img/home/instructors-1_desc.webp  768w,
+                          img/home/instructors-1_desc.webp 1200w
+                        "
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                        alt="instructor image"
+                        width="418"
+                        height="536"
+                        loading="lazy"
+                        class="radius-img"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -588,7 +611,6 @@
                 <div class="grid-section">
                   <div class="text-start grid-item order-2 order-lg-0">
                     <h6 class="text-uppercase">MIKHAIL KONSTANTAS</h6>
-                    <!-- <p class="fw-bold">Co-founder</p> -->
                     <div class="block-item-text pt-3 position-relative">
                       <div class="read-more-wrap">
                         <p>
@@ -615,11 +637,21 @@
                     </div>
                   </div>
                   <div class="d-flex flex-img">
-                    <img
-                      class="radius-img"
-                      src="img/home/instructors-1_desc.webp"
-                      alt="instructor image"
-                    />
+                    <picture>
+                      <img
+                        src="img/home/instructors-1_desc.webp"
+                        srcset="
+                          img/home/instructors-1_desc.webp  768w,
+                          img/home/instructors-1_desc.webp 1200w
+                        "
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                        alt="instructor image"
+                        width="418"
+                        height="536"
+                        loading="lazy"
+                        class="radius-img"
+                      />
+                    </picture>
                   </div>
                 </div>
               </div>
@@ -638,11 +670,21 @@
           <h2 class="text-center">Our Courses</h2>
           <div class="grid-section">
             <div class="grid-item-img">
-              <img
-                class="rounded-1"
-                src="img/home/courses-4_desc.webp"
-                alt="courses image"
-              />
+              <picture>
+                <img
+                  src="img/home/courses-4_desc.webp"
+                  srcset="
+                    img/home/courses-4_desc.webp  768w,
+                    img/home/courses-4_desc.webp 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  alt="courses image"
+                  width="535"
+                  height="357"
+                  loading="lazy"
+                  class="rounded-1"
+                />
+              </picture>
             </div>
 
             <div class="grid-item">
@@ -687,19 +729,39 @@
             </div>
 
             <div class="grid-item-img order-1 order-lg-0">
-              <img
-                class="rounded-1"
-                src="img/home/courses-1_desc.webp"
-                alt="courses image"
-              />
+              <picture>
+                <img
+                  src="img/home/courses-1_desc.webp"
+                  srcset="
+                    img/home/courses-1_desc.webp  768w,
+                    img/home/courses-1_desc.webp 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  alt="courses image"
+                  width="535"
+                  height="357"
+                  loading="lazy"
+                  class="rounded-1"
+                />
+              </picture>
             </div>
 
             <div class="grid-item-img">
-              <img
-                class="rounded-1"
-                src="img/home/courses-2_desc.webp"
-                alt="courses image"
-              />
+              <picture>
+                <img
+                  src="img/home/courses-2_desc.webp"
+                  srcset="
+                    img/home/courses-2_desc.webp  768w,
+                    img/home/courses-2_desc.webp 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  alt="courses image"
+                  width="535"
+                  height="357"
+                  loading="lazy"
+                  class="rounded-1"
+                />
+              </picture>
             </div>
 
             <div class="grid-item">
@@ -738,11 +800,21 @@
             </div>
 
             <div class="grid-item-img order-3 order-lg-0">
-              <img
-                class="rounded-1"
-                src="img/home/courses-3_desc.webp"
-                alt="courses image"
-              />
+              <picture>
+                <img
+                  src="img/home/courses-3_desc.webp"
+                  srcset="
+                    img/home/courses-3_desc.webp  768w,
+                    img/home/courses-3_desc.webp 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  alt="courses image"
+                  width="535"
+                  height="357"
+                  loading="lazy"
+                  class="rounded-1"
+                />
+              </picture>
             </div>
           </div>
 
