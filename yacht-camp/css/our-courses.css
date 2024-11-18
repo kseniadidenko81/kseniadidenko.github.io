@@ -1460,6 +1460,7 @@ textarea.form-control {
 .swiper-citation .card {
   border: 3px solid #b28224;
   background: #efedeb;
+  border-radius: 12px;
 }
 
 .swiper-container {
