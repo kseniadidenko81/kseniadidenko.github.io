@@ -881,6 +881,11 @@ nav .addittional-btn {
   }
 }
 
+.grid-top .flex-img img,
+.grid-bottom .flex-img img {
+  display: block;
+}
+
 @media (max-width: 767px) {
   .grid-top .flex-img,
   .grid-bottom .flex-img {
