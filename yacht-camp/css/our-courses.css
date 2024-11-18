@@ -856,6 +856,10 @@ nav .addittional-btn {
   margin-top: 32px;
 }
 
+.section-courses img {
+  display: block;
+}
+
 @media (min-width: 768px) {
   .section-courses {
     margin-top: 36px;
@@ -1372,6 +1376,7 @@ input.is-invalid + .invalid-feedback {
   max-height: 385px;
   object-fit: cover;
   border-radius: 12px;
+  display: block;
 }
 
 .section-contact-form .form-control {
