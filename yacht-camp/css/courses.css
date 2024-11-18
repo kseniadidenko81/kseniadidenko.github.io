@@ -1088,6 +1088,12 @@ nav .addittional-btn {
 .section-course .yacht-img {
   object-fit: cover;
   flex-grow: 1;
+  display: block;
+}
+
+.section-course picture {
+  height: 100%;
+  display: flex;
 }
 
 @media (min-width: 768px) {
@@ -1607,6 +1613,7 @@ nav .addittional-btn {
   max-height: 368px;
   object-fit: cover;
   border-radius: 12px;
+  display: block;
 }
 
 .section-contact-form .form-control {
