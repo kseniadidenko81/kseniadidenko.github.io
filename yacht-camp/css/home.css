@@ -837,13 +837,6 @@ nav .addittional-btn {
   }
 }
 
-/* @media (min-width: 576px) {
-  .content-section .col-lg-6:first-child {
-    max-width: 540px;
-    margin: auto;
-  }
-} */
-
 @media (max-width: 992px) {
   .content-section {
     max-width: 100%;
@@ -865,6 +858,7 @@ nav .addittional-btn {
 @media (max-width: 991px) {
   .main-section img {
     border-radius: 0;
+    margin: auto;
   }
 }
 
