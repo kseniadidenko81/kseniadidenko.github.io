@@ -938,6 +938,10 @@ nav .addittional-btn {
   font-family: var(--base-font-family);
 }
 
+.section-about img {
+  display: block;
+}
+
 .grid-section {
   display: grid;
   column-gap: 40px;
@@ -1200,6 +1204,10 @@ nav .addittional-btn {
 
 .section-courses .grid-item-img {
   margin: 0 -20px;
+}
+
+.section-courses .grid-item-img img {
+  display: block;
 }
 
 @media (min-width: 580px) {
