@@ -18,7 +18,7 @@
 
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
-        <link
+    <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin="anonymous"
@@ -80,6 +80,8 @@
       type="font/woff2"
       crossorigin="anonymous"
     />
+
+    <link rel="preload" href="img/home/courses-4_desc.webp" as="image" />
 
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
@@ -252,11 +254,21 @@
           </div>
           <div class="grid-section">
             <div class="grid-item-img">
-              <img
-                class="rounded-1"
-                src="img/home/courses-4_desc.webp"
-                alt="courses image"
-              />
+              <picture>
+                <img
+                  src="img/home/courses-4_desc.webp"
+                  srcset="
+                    img/home/courses-4_desc.webp  768w,
+                    img/home/courses-4_desc.webp 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  alt="courses image"
+                  width="535"
+                  height="357"
+                  loading="eager"
+                  class="rounded-1"
+                />
+              </picture>
             </div>
 
             <div class="grid-item">
@@ -302,19 +314,39 @@
             </div>
 
             <div class="grid-item-img order-1 order-lg-0">
-              <img
-                class="rounded-1"
-                src="img/home/courses-1_desc.webp"
-                alt="courses image"
-              />
+              <picture>
+                <img
+                  src="img/home/courses-1_desc.webp"
+                  srcset="
+                    img/home/courses-1_desc.webp  768w,
+                    img/home/courses-1_desc.webp 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  alt="courses image"
+                  width="535"
+                  height="357"
+                  loading="lazy"
+                  class="rounded-1"
+                />
+              </picture>
             </div>
 
             <div class="grid-item-img">
-              <img
-                class="rounded-1"
-                src="img/home/courses-2_desc.webp"
-                alt="courses image"
-              />
+              <picture>
+                <img
+                  src="img/home/courses-2_desc.webp"
+                  srcset="
+                    img/home/courses-2_desc.webp  768w,
+                    img/home/courses-2_desc.webp 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  alt="courses image"
+                  width="535"
+                  height="357"
+                  loading="lazy"
+                  class="rounded-1"
+                />
+              </picture>
             </div>
 
             <div class="grid-item">
@@ -353,11 +385,21 @@
             </div>
 
             <div class="grid-item-img order-3 order-lg-0">
-              <img
-                class="rounded-1"
-                src="img/home/courses-3_desc.webp"
-                alt="courses image"
-              />
+              <picture>
+                <img
+                  src="img/home/courses-3_desc.webp"
+                  srcset="
+                    img/home/courses-3_desc.webp  768w,
+                    img/home/courses-3_desc.webp 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  alt="courses image"
+                  width="535"
+                  height="357"
+                  loading="lazy"
+                  class="rounded-1"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -683,7 +725,20 @@
                 </form>
               </div>
               <div class="col-md-5">
-                <img class="" src="img/img_desc/course_img-5.webp" />
+                <picture>
+                  <img
+                    src="img/img_desc/course_img-5.webp"
+                    srcset="
+                      img/img_desc/course_img-5.webp  768w,
+                      img/img_desc/course_img-5.webp 1200w
+                    "
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                    alt="form image"
+                    width="350"
+                    height="467"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
             </div>
           </div>
