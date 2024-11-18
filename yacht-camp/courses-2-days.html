@@ -18,7 +18,7 @@
 
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
 
-        <link
+    <link
       rel="preconnect"
       href="https://fonts.gstatic.com"
       crossorigin="anonymous"
@@ -480,11 +480,21 @@
                 <span class="d-block">Who Is This</span>
                 <span class="d-block">Course For?</span>
               </h2>
-              <img
-                class="yacht-img"
-                src="img/img_desc/yacht_img.webp"
-                alt="course yachting"
-              />
+              <picture>
+                <img
+                  src="img/img_desc/yacht_img.webp"
+                  srcset="
+                    img/img_desc/yacht_img.webp  768w,
+                    img/img_desc/yacht_img.webp 1200w
+                  "
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                  alt="course yachting"
+                  width="780"
+                  height="538"
+                  loading="lazy"
+                  class="yacht-img"
+                />
+              </picture>
               <a
                 data-toggle="modal"
                 href="#susbc-form"
@@ -1023,7 +1033,20 @@
                 </form>
               </div>
               <div class="col-md-5">
-                <img class="" src="img/img_desc/course_img-5.webp" />
+                <picture>
+                  <img
+                    src="img/img_desc/course_img-5.webp"
+                    srcset="
+                      img/img_desc/course_img-5.webp  768w,
+                      img/img_desc/course_img-5.webp 1200w
+                    "
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
+                    alt="form image"
+                    width="350"
+                    height="467"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
             </div>
           </div>
