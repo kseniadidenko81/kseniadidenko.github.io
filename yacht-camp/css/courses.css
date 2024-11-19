@@ -807,6 +807,22 @@ nav .addittional-btn {
   min-height: 100vh;
 }
 
+.main-nav-screen {
+  background-image: url(../img/img_desc/main_img.webp);
+}
+
+.main-nav-screen-mooring {
+  background-image: url(../img/img_desc/main-mooring_img.webp);
+}
+
+.main-nav-screen-sail {
+  background-image: url(../img/img_desc/main-sail_img.webp);
+}
+
+.main-nav-screen-storm {
+  background-image: url(../img/img_desc/main-storm_img.webp);
+}
+
 .navbar .btn.addittional-btn {
   font-family: var(--additional-font-family);
   font-size: 16px;
