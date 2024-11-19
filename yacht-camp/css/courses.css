@@ -843,7 +843,7 @@ nav .addittional-btn {
 .hero-text p {
   max-width: 98%;
   font-family: var(--additional-font-family);
-  font-weight: 500;
+  font-weight: 300;
   font-size: 18px;
   line-height: 28px;
 }
