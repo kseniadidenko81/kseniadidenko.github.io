@@ -1061,13 +1061,14 @@ nav .addittional-btn {
     width: 182px;
     height: 53px;
     border-radius: 8px;
-    border: 1.5px solid #011928;
+    border: 1.5px solid #efedeb;
+    background: #efedeb;
     margin: auto;
     display: block;
   }
 
   .read-more-btn:hover {
-    border: 1.5px solid #011928;
+    border: 1.5px solid #efedeb;
   }
 }
 
