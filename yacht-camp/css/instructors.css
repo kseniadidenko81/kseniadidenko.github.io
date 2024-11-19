@@ -988,6 +988,10 @@ nav .addittional-btn {
     right: 0px;
     bottom: -15px;
   }
+
+  .read-less {
+    bottom: -20px;
+  }
 }
 
 @media (min-width: 768px) {
