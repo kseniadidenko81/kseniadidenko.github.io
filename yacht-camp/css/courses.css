@@ -108,7 +108,7 @@ nav .container {
 h1 {
   font-family: var(--additional-font-family);
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 46px;
 }
