@@ -529,6 +529,7 @@ nav .addittional-btn {
 .navbar-brand img {
   max-width: 60%;
   transition: max-width 0.5s;
+  margin: 0 !important;
 }
 
 @media (min-width: 580px) {
