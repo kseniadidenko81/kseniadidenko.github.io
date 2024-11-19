@@ -164,14 +164,11 @@ $(function () {
         .siblings(".read-more-wrap")
         .find(".read-more-target");
 
-      // Проверка, если блок еще скрыт
       if (!$target.hasClass("slide-down")) {
-        // Открываем блок с анимацией
         $target.stop(true).slideDown(500, "swing", () => {
           $target.addClass("slide-down");
         });
 
-        // Скрываем кнопку "Read More"
         $(this).hide();
       }
     });
