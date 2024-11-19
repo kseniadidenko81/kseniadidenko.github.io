@@ -1731,6 +1731,10 @@ textarea.form-control {
   line-height: 36px;
 }
 
+#susbc-form-thank .modal-header h6 {
+  font-weight: 400;
+}
+
 .modal-body {
   padding: 0 32px 32px;
 }
