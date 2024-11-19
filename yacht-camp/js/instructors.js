@@ -156,6 +156,7 @@ $(function () {
 });
 
 // READ MORE/LESS TEXT
+
 $(function () {
   if ($(window).width() <= 767) {
     $(".read-more").on("click", function () {
@@ -163,28 +164,16 @@ $(function () {
         .siblings(".read-more-wrap")
         .find(".read-more-target");
 
-      $(".read-less").remove();
-      $(".read-more").show();
+      // Проверка, если блок еще скрыт
+      if (!$target.hasClass("slide-down")) {
+        // Открываем блок с анимацией
+        $target.stop(true).slideDown(500, "swing", () => {
+          $target.addClass("slide-down");
+        });
 
-      $target.stop(true).slideDown(500, "swing", () => {
-        $target.addClass("slide-down");
-      });
-
-      $(this).hide();
-      $(this).after('<span class="read-less">Read Less</span>');
-    });
-
-    $(document).on("click", ".read-less", function () {
-      let $target = $(this)
-        .siblings(".read-more-wrap")
-        .find(".read-more-target");
-
-      $target.stop(true).slideUp(500, "swing", () => {
-        $target.removeClass("slide-down");
-      });
-
-      $(".read-more").show();
-      $(this).remove();
+        // Скрываем кнопку "Read More"
+        $(this).hide();
+      }
     });
   }
 });
