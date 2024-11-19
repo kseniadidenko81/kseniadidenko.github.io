@@ -1377,20 +1377,20 @@ nav .addittional-btn {
   border: 2px solid transparent;
 }
 
-.swiper2-button-next,
+/* .swiper2-button-next,
 .swiper2-button-prev {
   color: #011928;
   border: 2px solid #011928;
-}
+} */
 
-.swiper2-button-next:hover,
+/* .swiper2-button-next:hover,
 .swiper2-button-next:focus,
 .swiper2-button-prev:hover,
 .swiper2-button-prev:focus {
   color: rgba(255, 255, 255, 0.9);
   background: rgba(1, 25, 40, 0.85);
   border: 2px solid transparent;
-}
+} */
 
 .swiper-button-prev,
 .swiper-button-next {
@@ -1455,7 +1455,7 @@ nav .addittional-btn {
   max-width: 620px;
 }
 
-.section-gallery-slider .swiper-button-next:after {
+/* .section-gallery-slider .swiper-button-next:after {
   border-top: 2px solid #011928;
   border-left: 2px solid #011928;
 }
@@ -1463,7 +1463,7 @@ nav .addittional-btn {
 .section-gallery-slider .swiper-button-prev:before {
   border-top: 2px solid #011928;
   border-left: 2px solid #011928;
-}
+} */
 
 .section-gallery-slider .swiper-button-prev:hover:before,
 .section-gallery-slider .swiper-button-prev:focus:before {
