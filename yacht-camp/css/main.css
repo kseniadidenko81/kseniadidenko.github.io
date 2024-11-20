@@ -8,6 +8,33 @@
     scroll-behavior: smooth;
   }
 }
+/* Стили для WebKit-браузеров (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 0; /* Ширина полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #efedeb; /* Цвет полосы прокрутки */
+  border-radius: 8px; /* Закругленные углы */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #efedeb; /* Цвет полосы при наведении */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Цвет фона скролл-бара */
+}
+/* Стили для Firefox */
+html {
+  scrollbar-width: thin; /* Узкий скролл */
+  scrollbar-color: #888 #f1f1f1; /* Цвет полосы и трека */
+}
+
+/* Поддержка старых браузеров: стандартный скролл-бокс */
+.scrollbar-container {
+  overflow-y: scroll;
+}
 label {
   display: inline-block;
 }
