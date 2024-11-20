@@ -851,7 +851,7 @@ nav .addittional-btn {
 
 @media (max-width: 480px) {
   .hero-text {
-    margin-left: 10px;
+    margin-left: -10px;
     margin-right: -10px;
   }
 }
