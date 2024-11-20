@@ -104,7 +104,7 @@ $(function () {
 
       $("#response-message")
         .fadeIn(500)
-        .text("Thank you! Your message has been sent. We will contact you.");
+        .text("Thank you! We will contact you soon.");
 
       $("#submit-btn").html(
         '<span class="check-icon"></span> <span class="text-button">Sent</span>'
