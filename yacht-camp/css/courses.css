@@ -849,6 +849,13 @@ nav .addittional-btn {
   z-index: 10;
 }
 
+@media (max-width: 480px) {
+  .hero-text {
+    margin-left: 10px;
+    margin-right: -10px;
+  }
+}
+
 .hero-text p {
   max-width: 98%;
   font-family: var(--additional-font-family);
